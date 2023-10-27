@@ -1,0 +1,19 @@
+clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+cosine-annealing-warmup @ git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup@12d03c07553aedd3d9e9155e2b3e31ce8c64081a
+accelerate==0.23.0
+matplotlib==3.8.0
+numpy==1.26.1
+openai==0.28.1
+scipy==1.11.3
+tensorboard==2.11.2
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow-cpu==2.11.1
+torch==2.1.0
+torchaudio==2.1.0
+torchmetrics==1.2.0
+torchvision==0.16.0
+transformers==4.34.1
+triton==2.1.0
+xformers==0.0.22.post4
+datasets==2.14.5
