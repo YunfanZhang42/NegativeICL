@@ -1,4 +1,5 @@
 import argparse
+import os
 import time
 import random
 import numpy as np
@@ -22,7 +23,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_length", type=int, default=1024, help="Maximum length of the input sequence.")
     parser.add_argument("--batch-size", type=int, default=32, help="Batch size for training.")
     parser.add_argument("--eval-batch-size", type=int, default=8, help="Batch size for evaluation.")
-    parser.add_argument("--gradient-accumulation-steps", type=int, default=16, help="Number of steps for gradient accumulation.")
+    parser.add_argument("--gradient-accumulation-steps", type=int, default=32, help="Number of steps for gradient accumulation.")
     parser.add_argument("--weight-decay", type=float, default=1e-5, help="Weight decay for the optimizer.")
     parser.add_argument("--max-lr", type=float, default=1e-5)
     parser.add_argument("--min-lr", type=float, default=1e-5 * 0.01)
@@ -115,6 +116,7 @@ if __name__ == "__main__":
 
                 outputs = model(input_ids=inputs, attention_mask=mask, labels=labels)
                 loss = outputs.loss
+                loss /= args.gradient_accumulation_steps
 
             scaler.scale(loss).backward()
             step_count += 1
@@ -126,7 +128,6 @@ if __name__ == "__main__":
                 optimizer.zero_grad()
                 scheduler.step()
                 batch_count += 1
-                batch_loss /= args.gradient_accumulation_steps
                 print(
                     f"Epoch {epoch}, Batch {batch_count}, Loss {batch_loss}, samples/sec {args.batch_size / (time.time() - last_batch_time)}"
                 )
@@ -150,8 +151,8 @@ if __name__ == "__main__":
 
                     eval_loss /= len(valid_dataloader)
                     log_writer.add_scalar("eval_loss", eval_loss, batch_count)
-                    print(f"Batch count {batch_count}, Eval loss {eval_loss}, \
-                          samples/sec {len(valid_dataloader) * args.eval_batch_size / (time.time() - eval_start_time)}")
+                    print(f"Batch count {batch_count}, Eval loss {eval_loss}, " + 
+                          f"samples/sec {len(valid_dataloader) * args.eval_batch_size / (time.time() - eval_start_time)}")
 
                     if eval_loss < best_eval_loss:
                         best_eval_loss = eval_loss
