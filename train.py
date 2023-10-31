@@ -24,7 +24,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch-size", type=int, default=32, help="Batch size for training.")
     parser.add_argument("--eval-batch-size", type=int, default=8, help="Batch size for evaluation.")
     parser.add_argument("--gradient-accumulation-steps", type=int, default=32, help="Number of steps for gradient accumulation.")
-    parser.add_argument("--weight-decay", type=float, default=1e-5, help="Weight decay for the optimizer.")
+    parser.add_argument("--weight-decay", type=float, default=0.01, help="Weight decay for the optimizer.")
     parser.add_argument("--max-lr", type=float, default=1e-5)
     parser.add_argument("--min-lr", type=float, default=1e-5 * 0.01)
     parser.add_argument("--cycle-steps", type=int, default=50_000)
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr-gamma", type=float, default=0.5)
 
     parser.add_argument("--num-epochs", type=int, default=10, help="Number of epochs for training.")
-    parser.add_argument("--eval-batch-count", type=int, default=1_000, help="Evaluate model every X batches.")
+    parser.add_argument("--eval-very-n-steps", type=int, default=1_000, help="Evaluate model every X batches.")
 
     parser.add_argument("--fp16", action="store_true", help="Use mixed precision training.")
     parser.add_argument("--compile", action="store_true", help="Compile the model for faster training.")
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     # Initialize the model and optimizer
     model = GPT2LMHeadModel.from_pretrained(args.model_type).to(device)
     if args.load_model is not None:
-        model.load_state_dict(torch.load(args.load_model))
+        model.load_state_dict(torch.load(args.load_model, map_location=device))
     if args.activation_checkpointing:
         model.gradient_checkpointing_enable()
     model = torch.compile(model, disable=not args.compile)
