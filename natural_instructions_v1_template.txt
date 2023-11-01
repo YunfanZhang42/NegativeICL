@@ -1,0 +1,17 @@
+Task: {title}
+
+Definition: {definition}
+
+Instructions: {prompt}
+
+Things to Avoid: {avoid}
+
+Emphasis & Caution: {emphasis}
+
+{negative_examples}
+
+{positive_examples}
+
+Now, solve the problem presented below. You should closely follow the positive examples presented above, while avoiding similar mistakes as the negative examples (if present).
+
+{input}
