@@ -128,11 +128,11 @@ class NaturalInstructionsV1Seq2SeqDataset(Dataset):
             negative_examples_str = "\n".join(selected_negative_examples)
 
             input_with_examples = template.format(
-                title=task_data["Title"],
-                definition=task_data["Definition"],
-                prompt=task_data["Prompt"],
-                avoid=task_data["Things to Avoid"],
-                emphasis=task_data["Emphasis & Caution"],
+                title=task_data["Title"].strip(),
+                definition=task_data["Definition"].strip(),
+                prompt=task_data["Prompt"].strip(),
+                avoid=task_data["Things to Avoid"].strip(),
+                emphasis=task_data["Emphasis & Caution"].strip(),
                 negative_examples=negative_examples_str.strip(),
                 positive_examples=positive_examples_str.strip(),
                 input=sample["input"],

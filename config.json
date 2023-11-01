@@ -1,6 +1,6 @@
 {
-  "model_type": "google/flan-t5-large",
-  "model_name": "flan-t5-large-natural-instructions",
+  "model_type": "facebook/bart-base",
+  "model_name": "bart-base-natural-instructions",
   "load_model": null,
 
   "subtask_dir": "./natural-instructions-1.0/data/",
@@ -76,7 +76,7 @@
   "neg_template": "./natural_instructions_v1_negative_examples_template.txt",
 
   "max_input_length": 1024,
-  "max_output_length": 256,
+  "max_output_length": 128,
   "batch_size": 32,
   "eval_batch_size": 8,
   "gradient_accumulation_steps": 32,
@@ -90,7 +90,7 @@
   "num_epochs": 10,
   "eval_very_n_steps": 1000,
 
-  "fp16": false,
+  "fp16": true,
   "compile": true,
   "activation_checkpointing": false,
 

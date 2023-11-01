@@ -11,7 +11,15 @@ from torch.utils.data import DataLoader
 from torch import autocast
 from torch.cuda.amp import GradScaler
 from torch.utils.tensorboard import SummaryWriter
-from transformers import T5TokenizerFast, T5ForConditionalGeneration
+from transformers import (
+    T5TokenizerFast,
+    T5ForConditionalGeneration,
+    LongT5ForConditionalGeneration,
+    BartTokenizerFast,
+    BartForConditionalGeneration,
+    AutoTokenizer,
+    AutoModelForSeq2SeqLM,
+)
 from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
 from data import NaturalInstructionsV1Seq2SeqDataset
 
@@ -38,7 +46,12 @@ if __name__ == "__main__":
     print(f"Finished setting up device: {device}")
 
     # Initialize the tokenizer
-    tokenizer = T5TokenizerFast.from_pretrained(config.model_type)
+    if "flan-t5" in config.model_type or "google/t5" in config.model_type:
+        tokenizer = T5TokenizerFast.from_pretrained(config.model_type)
+    elif "bart" in config.model_type:
+        tokenizer = BartTokenizerFast.from_pretrained(config.model_type)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(config.model_type)
     print(f"Finished initializing tokenizer")
 
     # Initialize the datasets
@@ -63,7 +76,7 @@ if __name__ == "__main__":
         max_input_length=config.max_input_length,
         max_output_length=config.max_output_length,
     )
-    print(f"Finished loading datasets")
+    print(f"Finished loading datasets, training samples: {len(train_dataset)}, validation samples: {len(val_dataset)}")
 
     # Initialize the dataloaders
     train_dataloader = DataLoader(
@@ -73,10 +86,19 @@ if __name__ == "__main__":
         drop_last=True,
         num_workers=config.num_workers,
     )
-    valid_dataloader = DataLoader(val_dataset, batch_size=config.eval_batch_size, shuffle=False, drop_last=True, num_workers=config.num_workers)
+    valid_dataloader = DataLoader(
+        val_dataset, batch_size=config.eval_batch_size, shuffle=False, drop_last=True, num_workers=config.num_workers
+    )
 
     # Initialize the model and optimizer
-    model = T5ForConditionalGeneration.from_pretrained(config.model_type).to(device)
+    if "flan-t5" in config.model_type or "google/t5" in config.model_type:
+        model = T5ForConditionalGeneration.from_pretrained(config.model_type).to(device)
+    elif "google/long-t5" in config.model_type:
+        model = LongT5ForConditionalGeneration.from_pretrained(config.model_type).to(device)
+    elif "bart" in config.model_type:
+        model = BartForConditionalGeneration.from_pretrained(config.model_type).to(device)
+    else:
+        model = AutoModelForSeq2SeqLM.from_pretrained(config.model_type).to(device)
     if config.load_model is not None:
         model.load_state_dict(torch.load(config.load_model, map_location=device))
     if config.activation_checkpointing:
@@ -150,8 +172,10 @@ if __name__ == "__main__":
 
                     eval_loss /= len(valid_dataloader)
                     log_writer.add_scalar("eval_loss", eval_loss, batch_count)
-                    print(f"Batch count {batch_count}, Eval loss {eval_loss}, " + 
-                          f"samples/sec {len(valid_dataloader) * config.eval_batch_size / (time.time() - eval_start_time)}")
+                    print(
+                        f"Batch count {batch_count}, Eval loss {eval_loss}, "
+                        + f"samples/sec {len(valid_dataloader) * config.eval_batch_size / (time.time() - eval_start_time)}"
+                    )
 
                     if eval_loss < best_eval_loss:
                         best_eval_loss = eval_loss
