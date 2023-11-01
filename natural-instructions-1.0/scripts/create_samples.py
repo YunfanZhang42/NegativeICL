@@ -80,10 +80,11 @@ def main():
     parser.add_argument("--task_path", type=str, required=True)
     args = parser.parse_args()
 
-    # read in data    
+    # read in data
     with open(args.task_path, "r", encoding="utf-8") as reader:
         data = reader.read()
     data = json.loads(data)
+    # task_name = args.task_path.split("\\")[-1].split(".")[0]
 
     # get the context with few-shot examples
     context = get_context(data)
