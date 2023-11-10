@@ -5,7 +5,7 @@ import evaluate
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Finetune models on natural instructions dataset.")
-    parser.add_argument("--results", type=str, default="/home/yunfan/Workspace/NegativeICL/generation_results/bart-large-no-few-shot.json", help="Path to config file")
+    parser.add_argument("--results", type=str, default="./generation_results/bart-large-pos-4.json", help="Path to config file")
     args = parser.parse_args()
 
     results = json.load(open(args.results, "r"))
