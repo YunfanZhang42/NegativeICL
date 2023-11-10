@@ -1,8 +1,7 @@
 {
   "model_type": "facebook/bart-large",
-  "model_name": "bart-large-no-few-shot",
-  "load_model": null,
-
+  "model_name": "bart-large-pos-2-neg-2",
+  "load_model": "./checkpoints/bart-large-pos-2-neg-2_best.pt",
   "subtask_dir": "./natural-instructions-1.0/data/",
   "train_tasks": [
     "subtask006_mctaco_question_generation_transient_stationary.json",
@@ -39,7 +38,6 @@
     "subtask057_multirc_classify_incorrect_answer.json",
     "subtask059_ropes_story_generation4.json"
   ],
-
   "val_tasks": [
     "subtask003_mctaco_question_generation_event_duration.json",
     "subtask022_cosmosqa_passage_inappropriate_binary.json",
@@ -49,16 +47,13 @@
     "subtask044_essential_terms_identifying_essential_words.json",
     "subtask045_miscellaneous_sentence_paraphrasing.json"
   ],
-
   "template": "./templates/natural_instructions_v1_template.txt",
   "pos_template": "./templates/natural_instructions_v1_positive_examples_template.txt",
   "neg_template": "./templates/natural_instructions_v1_negative_examples_template.txt",
   "openai_system_prompt": "./templates/openai_system_prompt.txt",
-
-  "positive_examples": 0,
-  "negative_examples": 0,
+  "positive_examples": 2,
+  "negative_examples": 2,
   "additional_instructions": true,
-
   "max_input_length": 1024,
   "max_output_length": 128,
   "batch_size": 32,
@@ -66,24 +61,20 @@
   "gradient_accumulation_steps": 8,
   "weight_decay": 0.01,
   "max_lr": 0.00002,
-  "min_lr": 0.0000002,
+  "min_lr": 2e-7,
   "cycle_steps": 5000,
   "warmup_steps": 500,
   "lr_gamma": 0.8,
-
   "num_epochs": 3,
   "eval_very_n_steps": 1500,
-
   "fp16": true,
   "compile": true,
   "activation_checkpointing": false,
-
   "seed": 456970,
   "device": "cuda",
   "num_workers": 1,
-
   "do_sample": false,
   "temperature": 0.01,
-  "top_p": 1.0,
-  "repetition_penalty": 1.0
+  "top_p": 1,
+  "repetition_penalty": 1
 }

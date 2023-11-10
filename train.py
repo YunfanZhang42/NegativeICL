@@ -25,13 +25,13 @@ from data import NaturalInstructionsV1Seq2SeqDataset
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Finetune Flan-T5 on natural instructions dataset.")
+    parser = argparse.ArgumentParser(description="Finetune models on natural instructions dataset.")
     parser.add_argument("--config", type=str, default="./dev_config.json", help="Path to config file")
     args = parser.parse_args()
 
     # Load the config
     with open(args.config, "r") as f:
-        config = parsed = DotMap(json.load(f))
+        config = DotMap(json.load(f))
 
     # Set up the environment
     log_writer = SummaryWriter(f"./logs/{config.model_name}")
@@ -64,6 +64,9 @@ if __name__ == "__main__":
         tokenizer=tokenizer,
         max_input_length=config.max_input_length,
         max_output_length=config.max_output_length,
+        positive_examples=config.positive_examples,
+        negative_examples=config.negative_examples,
+        additional_instructions=config.additional_instructions,
     )
 
     val_dataset = NaturalInstructionsV1Seq2SeqDataset(
@@ -75,6 +78,9 @@ if __name__ == "__main__":
         tokenizer=tokenizer,
         max_input_length=config.max_input_length,
         max_output_length=config.max_output_length,
+        positive_examples=config.positive_examples,
+        negative_examples=config.negative_examples,
+        additional_instructions=config.additional_instructions,
     )
     print(f"Finished loading datasets, training samples: {len(train_dataset)}, validation samples: {len(val_dataset)}")
 
@@ -99,11 +105,13 @@ if __name__ == "__main__":
         model = BartForConditionalGeneration.from_pretrained(config.model_type).to(device)
     else:
         model = AutoModelForSeq2SeqLM.from_pretrained(config.model_type).to(device)
+
+    model = torch.compile(model, disable=not config.compile)
+
     if config.load_model is not None:
         model.load_state_dict(torch.load(config.load_model, map_location=device))
     if config.activation_checkpointing:
         model.gradient_checkpointing_enable()
-    model = torch.compile(model, disable=not config.compile)
     print(f"Finished loading model")
 
     optimizer = optim.AdamW(model.parameters(), lr=config.max_lr, weight_decay=config.weight_decay)
@@ -179,9 +187,9 @@ if __name__ == "__main__":
 
                     if eval_loss < best_eval_loss:
                         best_eval_loss = eval_loss
-                        torch.save(model.state_dict(), f"./{config.model_name}_best.pt")
+                        torch.save(model.state_dict(), f"./checkpoints/{config.model_name}_best.pt")
 
-                    torch.save(model.state_dict(), f"./{config.model_name}_latest.pt")
+                    torch.save(model.state_dict(), f"./checkpoints/{config.model_name}_latest.pt")
                     print(f"Saving latest model with loss {eval_loss}, batch {batch_count}")
 
                     model.train()

@@ -1,0 +1,18 @@
+import argparse
+import json
+import evaluate
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Finetune models on natural instructions dataset.")
+    parser.add_argument("--results", type=str, default="/home/yunfan/Workspace/NegativeICL/generation_results/bart-large-no-few-shot.json", help="Path to config file")
+    args = parser.parse_args()
+
+    results = json.load(open(args.results, "r"))
+
+    rouge = evaluate.load('rouge')
+
+    for key, values in results.items():
+        print(key)
+        score = rouge.compute(predictions=values["pred"], references=values["gt"], rouge_types=["rougeL"])
+        print(f"Rouge-L: {score['rougeL']}")

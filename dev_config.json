@@ -1,37 +1,48 @@
 {
-  "model_type": "facebook/bart-base",
-  "model_name": "bart-base-natural-instructions",
-  "load_model": null,
+  "model_type": "facebook/bart-large",
+  "model_name": "bart-large-pos-2-neg-2",
+  "load_model": "/home/yunfan/Workspace/NegativeICL/checkpoints/bart-large-pos-2-neg-2_best.pt",
 
   "subtask_dir": "./natural-instructions-1.0/data/",
+  
   "train_tasks": ["subtask024_cosmosqa_answer_generation.json"],
 
-  "val_tasks": ["subtask045_miscellaneous_sentence_paraphrasing.json"],
+  "val_tasks": ["subtask003_mctaco_question_generation_event_duration.json"],
 
-  "template": "./natural_instructions_v1_template.txt",
-  "pos_template": "./natural_instructions_v1_positive_examples_template.txt",
-  "neg_template": "./natural_instructions_v1_negative_examples_template.txt",
+  "template": "./templates/natural_instructions_v1_template.txt",
+  "pos_template": "./templates/natural_instructions_v1_positive_examples_template.txt",
+  "neg_template": "./templates/natural_instructions_v1_negative_examples_template.txt",
+
+  "positive_examples": 2,
+  "negative_examples": 2,
+  "additional_instructions": true,
 
   "max_input_length": 1024,
   "max_output_length": 128,
   "batch_size": 32,
-  "eval_batch_size": 8,
-  "gradient_accumulation_steps": 32,
+  "eval_batch_size": 4,
+  "gradient_accumulation_steps": 8,
   "weight_decay": 0.01,
-  "max_lr": 0.00001,
-  "min_lr": 0.0000001,
-  "cycle_steps": 50000,
-  "warmup_steps": 5000,
-  "lr_gamma": 0.5,
+  "max_lr": 0.00002,
+  "min_lr": 0.0000002,
+  "cycle_steps": 5000,
+  "warmup_steps": 500,
+  "lr_gamma": 0.8,
 
-  "num_epochs": 10,
-  "eval_very_n_steps": 1000,
+  "num_epochs": 5,
+  "eval_very_n_steps": 1500,
 
   "fp16": true,
   "compile": true,
   "activation_checkpointing": false,
 
-  "seed": 45693370,
+  "seed": 456970,
   "device": "cuda",
-  "num_workers": 2
+  "num_workers": 1,
+
+  "do_sample": false,
+  "temperature": 0.1,
+  "top_p": 1.0,
+  "repetition_penalty": 1.0
+
 }
