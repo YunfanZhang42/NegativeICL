@@ -106,3 +106,7 @@ if __name__ == "__main__":
             # Save the results
             with open(f"./generation_results/{config.model_name}.json", "w") as f:
                 json.dump(results, f, indent=2)
+
+    # Save the results
+    with open(f"./generation_results/{config.model_name}.json", "w") as f:
+        json.dump(results, f, indent=2)

@@ -8,7 +8,7 @@
 - In terms of negative examples, Bart seems to be unaffected due to its extremely limited ICL capability. GPT-3.5 performed slightly worse with negative examples.
 
 ## Rouge-L Scores
-### GPT-3.5, 2 Positive Examples, 0 Negative Examples
+### GPT-3.5, 2 Positive Examples, 0 Negative Examples - missing the last 1000 samples, needs fix.
 ```
 subtask003_mctaco_question_generation_event_duration
 Rouge-L: 0.5052912331319627
@@ -23,7 +23,7 @@ Rouge-L: 0.5699477473860566
 subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.6096463688199856
 ```
-### GPT-3.5, 2 Positive Examples, 2 Negative Examples
+### GPT-3.5, 2 Positive Examples, 2 Negative Examples - missing the last 1000 samples, needs fix.
 ```
 subtask003_mctaco_question_generation_event_duration
 Rouge-L: 0.5035106042201024
