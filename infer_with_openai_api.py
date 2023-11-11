@@ -1,6 +1,7 @@
 import argparse
 import time
 import json
+import os
 
 from dotmap import DotMap
 from openai import OpenAI
@@ -51,7 +52,7 @@ def openai_api_call(client, openai_system_prompt, openai_few_shot_prompt):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate models on natural instructions dataset.")
-    parser.add_argument("--config", type=str, default="./config.json", help="Path to config file")
+    parser.add_argument("--config", type=str, default="./generate_config.json", help="Path to config file")
     args = parser.parse_args()
 
     # Load the config
@@ -93,14 +94,29 @@ if __name__ == "__main__":
     # Initialize the OpenAI API
     client = OpenAI(api_key=OPENAI_API_KEY, timeout=60.0)
 
+    # Load the existing results so we can recover from break points.
     results = {}
+    if os.path.exists(f"./generation_results/{config.model_name}.json"):
+        with open(f"./generation_results/{config.model_name}.json", "r") as f:
+            results = json.load(f)        
+
+    task_counters = {}
+
     for i, batch in enumerate(valid_dataloader):
+        task_name = batch["task_name"][0]
         input_str = tokenizer.decode(batch["input_ids"][0], skip_special_tokens=True)
-        result = openai_api_call(client, openai_system_prompt, input_str)
-        if batch["task_name"][0] not in results:
-            results[batch["task_name"][0]] = {"pred": [], "gt": []}
-        results[batch["task_name"][0]]["pred"].append(result)
-        results[batch["task_name"][0]]["gt"].append(batch["all_outputs"][0])
+        
+        if task_name not in task_counters:    
+            task_counters[task_name] = 0   
+        task_counters[task_name] += 1
+
+        if task_name not in results:
+            results[task_name] = {"pred": [], "gt": []}
+
+        if len(results[task_name]["pred"]) < task_counters[task_name]:
+            result = openai_api_call(client, openai_system_prompt, input_str)
+            results[task_name]["pred"].append(result)
+            results[task_name]["gt"].append(batch["all_outputs"][0])
 
         if i % checkpoint_interval == 0:
             # Save the results
