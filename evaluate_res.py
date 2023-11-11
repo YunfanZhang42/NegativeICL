@@ -3,7 +3,9 @@ import json
 from evaluate import load
 
 
-RES = [
+RES = [ 
+        "bart-large-all-tasks-no-few-shot.json",
+        "bart-large-all-tasks-pos-max.json",
         "gpt-3.5-pos-2.json",
         "gpt-3.5-pos-2-neg-2.json",
         "bart-large-no-few-shot.json",
@@ -97,12 +99,13 @@ if __name__ == "__main__":
             total_score["bertscore"] += bertscore
             # add to subtask 022 score
             if key.startswith("subtask022"):
-                subtask_022["bleu"] += bleu
-                subtask_022["rouge1"] += rouge_1
-                subtask_022["rouge2"] += rouge_2
-                subtask_022["rougeL"] += rouge_L
-                subtask_022["chrf"] += chrf
-                subtask_022["bertscore"] += bertscore
+                print("This is subtask022!!!!")
+                subtask_022["bleu"] = bleu
+                subtask_022["rouge1"] = rouge_1
+                subtask_022["rouge2"] = rouge_2
+                subtask_022["rougeL"] = rouge_L
+                subtask_022["chrf"] = chrf
+                subtask_022["bertscore"] = bertscore
             
             # print results
             print("--------------------------------------------")
@@ -121,16 +124,16 @@ if __name__ == "__main__":
             "rouge2": total_score["rouge2"] / len(results),
             "rougeL": total_score["rougeL"] / len(results),
             "chrf": total_score["chrf"] / len(results),
-            "bertscore": total_score["bertscore"] / len(results),
+            # "bertscore": total_score["bertscore"] / len(results),
         }
         # calculate average score without subtask 022
         avg_score_without_022 = {
-            "bleu": (total_score["bleu"] - subtask_022["bleu"]) / (len(results) - len(subtask_022)),
-            "rouge1": (total_score["rouge1"] - subtask_022["rouge1"]) / (len(results) - len(subtask_022)),
-            "rouge2": (total_score["rouge2"] - subtask_022["rouge2"]) / (len(results) - len(subtask_022)),
-            "rougeL": (total_score["rougeL"] - subtask_022["rougeL"]) / (len(results) - len(subtask_022)),
-            "chrf": (total_score["chrf"] - subtask_022["chrf"]) / (len(results) - len(subtask_022)),
-            "bertscore": (total_score["bertscore"] - subtask_022["bertscore"]) / (len(results) - len(subtask_022)),
+            "bleu": (total_score["bleu"] - subtask_022["bleu"]) / (len(results) - 1),
+            "rouge1": (total_score["rouge1"] - subtask_022["rouge1"]) / (len(results) - 1),
+            "rouge2": (total_score["rouge2"] - subtask_022["rouge2"]) / (len(results) - 1),
+            "rougeL": (total_score["rougeL"] - subtask_022["rougeL"]) / (len(results) - 1),
+            "chrf": (total_score["chrf"] - subtask_022["chrf"]) / (len(results) - 1),
+            # "bertscore": (total_score["bertscore"] - subtask_022["bertscore"]) / (len(results) - 1),
         }
         print("============================================================")
         print(f"Average BLEU: {avg_score['bleu']}")
