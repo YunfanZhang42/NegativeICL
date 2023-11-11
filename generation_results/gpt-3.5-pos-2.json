@@ -83321,7 +83321,674 @@
       "plant, produces, tiny plants, edges, leaves, fall, ground, root, new plants",
       "change, chemical composition, paper",
       "Trout, classified, fish, physical feature",
-      "metal railroad tracks, heat, summer day"
+      "metal railroad tracks, heat, summer day",
+      "adaptation, walrus, stay warm, cold water, thick layer, blubber",
+      "glacier, slow moving, ice, create soil",
+      "celestial object, produces, heat, light, closest star, Earth",
+      "recycling, best example, using, washing, reusing, plastic cups, empty milk cartons, flower planters, using, aluminum cans, new products",
+      "produces, magnetic field, electricity, wire",
+      "pumice, rock, volcano eruption",
+      "most, salmon, leave, salt water, return, fresh water",
+      "drops of water, outside, window, disappeared, caused, evaporate",
+      "days, hatch, egg, reliable",
+      "full moon, night, instrument, observations",
+      "Green leaves, changing, shades, gold, orange, autumn",
+      "seeds, dispersed, plant, wind, water, insects, airplane",
+      "ice cube, temperature, water, melts",
+      "fossils, learn, organisms",
+      "save, animals, trees, best, way",
+      "force, bring, objects, Earth, gravity",
+      "pot, completely filled, water, poured, bucket, no water spills, suggests, same",
+      "microscope, tool, seeing, small objects",
+      "student, sliding, stop, bottom, slide, force, magnetism, gravity, friction, erosion",
+      "Eye color, physical trait, specific, inherited",
+      "magnetic, pole, repel",
+      "materials, slow, transfer, heat",
+      "insects, grow, full size, food",
+      "presence, animal fossil, rock, evidence, time period",
+      "parallel circuit, electricity, flows, more than one pathway",
+      "escape strategy, avoid, killed, eaten, predators",
+      "animals, gills, live, water",
+      "rotate, axis, one day",
+      "show, change, happening, time, display, results, line graph",
+      "human body, system, defend, disease",
+      "living component, desert, California, horned lizard",
+      "instrument, measure, air pressure, barometer",
+      "formation, constructive, destructive, weathering, erosion, deposition, sediment",
+      "chromosomes, normal human liver cell",
+      "food, shelter, energy",
+      "conduction, heat, materials, rubber, copper, wood, hot plates, ice, warm",
+      "air, bottle, unchanged",
+      "Clouds, water, evaporation, condensation, precipitation",
+      "frozen water, temperature, increases",
+      "part, plant, protects, eaten, thorn",
+      "observations, describe, weather, temperature, sky conditions",
+      "apple tree, growing apples, leaves",
+      "squirrel, gathering nuts, helps, trees",
+      "photosynthesis, plants, take in, release, oxygen, carbon dioxide",
+      "ball of clay, sinks, water, property, change, float",
+      "lighter colored clothing, summer",
+      "moving water, produce electricity, disadvantage, local ecosystem",
+      "transfer, thermal energy, object",
+      "solar system, orbits, Earth, moon",
+      "electromagnet, turned on, off, required, operation",
+      "heated, stove, process, metal handle, hot",
+      "change, Earth's surface, water cycle",
+      "energy, renewable, wind, coal",
+      "Plants, animals, different, produce, food",
+      "energy, depend, Sun",
+      "telephone, sound energy, changed, mostly",
+      "breaking down, food, simple substances, occurs, digestive system",
+      "galaxy, cluster",
+      "process, light, bend, rainbow, refraction",
+      "function, cardiovascular system, transport, gases",
+      "Maple Tree, Ants",
+      "young eagle's eyes, color, greatest effect",
+      "bacteria, beneficial, harmful",
+      "competition, result, extinction, death, offspring, weaker organisms",
+      "plants, reproduce",
+      "melting, butter, warm room, example",
+      "crater",
+      "John, moon, phase",
+      "radio, batteries, energy transformation",
+      "block, unknown material, magnetic",
+      "chainsaws, help, farmers, remove, trees, less time",
+      "oven door, opened, halfway through baking, decrease, temperature",
+      "non-living component, rain forest, ecosystem",
+      "Sun, larger, stars, yellow color, high temperature, distance from Earth, chemical composition",
+      "force, pulls, objects, Earth",
+      "environmental changes, months, years, drought",
+      "solar eclipse, causes, shadow, moon, Earth",
+      "Earth layers, greatest density",
+      "invention, telescope, allowed, take place, discovery, cells, identification, weather patterns, detailed observation, planets, communication, distant cities",
+      "bird, hatched, egg, next, life cycle",
+      "cell, survive, other cells, yeast",
+      "temperature, water, changes, 5\u00b0C, -1\u00b0C",
+      "activities, relies, high-quality soil, growing crops",
+      "animal behavior, affect, environment",
+      "rotation, Earth, Sun, equivalent, day, nighttime",
+      "Solar radiation, water cycle, affecting, vapor",
+      "removal, decomposers, ecosystem, effect, greatest, spread, disease, availability, water, recycling, nutrients, distribution, organisms",
+      "nonliving part, river habitat, rock",
+      "months, coldest, Northern Hemisphere, December",
+      "living things, survive, each year",
+      "toy car, push, wooden floor, cement floor, investigating, surface, roll, farther",
+      "relationship, bees, flowers, example",
+      "scientist, heats, solid substance, two different melting points, separate, two resulting liquids",
+      "Stout beardfish, deep ocean, no light, survive, dark",
+      "primary energy source, drives, weather events, precipitation, hurricanes, tornados",
+      "resources, renewable, wind",
+      "substance, change, new substance, physical, chemical properties",
+      "ocean waves, crash, beach",
+      "ecosystem, living, non-living, environment",
+      "rock",
+      "managing, trees, forests, planting, cut down, removing, stumps",
+      "Oxygen, given off, taken in, plants, animals",
+      "tree, grass, alike",
+      "electrical energy, prevent, overloading, circuit, causing, fire, fuse",
+      "temperature, warm water, five different cups",
+      "differences, temperature, air pressure",
+      "grass, energy",
+      "curiosity",
+      "Astronauts, weigh, Earth, moon",
+      "counting, legs, ant",
+      "turtle's shell, main function, protect",
+      "experiment, tomato plants, hypothesis",
+      "precipitation, winds, temperatures, blizzard",
+      "tadpole, grows, gills, change, lungs, survive",
+      "metal, rod, struck, vibrate, next, produces, sound",
+      "switch, closed, simple series circuit, light bulb, electricity, flowing",
+      "process, plants, make food",
+      "disease, sailors, oranges, lemons",
+      "energy, make food, sunlight",
+      "Plants, transform, energy, make, food",
+      "measure, mass, object, Balance",
+      "processes, water cycle, primarily responsible, creation, lake",
+      "fur color, Arctic hare, brown, summer, white, winter",
+      "fungus, decomposer, breaks down, rotting material",
+      "fox, find, food, characteristic, sense of smell",
+      "Thick, curly hair, Enjoying horseback riding",
+      "tool, mass, object",
+      "kind of food, gives, dog",
+      "Isaac Newton, gravity, objects, fall, ground, force, causes",
+      "squirrels, sleep, long periods, winter months",
+      "Increased humidity, result",
+      "ship's, iron, anchor, sink, ocean floor, released, overboard, gravity",
+      "living, nonliving, Earth materials",
+      "soils, alike, rocks, layers, water, texture",
+      "Moon, orbit, Earth, month",
+      "substance, combine, water, solution",
+      "learned behavior, protect",
+      "extend, shelf life, irradiate, fruits, vegetables",
+      "electrical circuit, battery, three light bulbs, SERIES, burns out, shine",
+      "bear knowing, cat clawing, dog coming, horse trotting",
+      "respiratory, circulatory, similar",
+      "renewable natural resource, plants, protect, soil",
+      "guitar string, plucked, sound, produced, vibrations",
+      "Pumice, formed, lava, volcano, rock type",
+      "behavior, establish, territory",
+      "animal, get, oxygen, enables",
+      "Plants, hills, keep dirt, roots, grow, dirt, moving",
+      "container, water, freezer, overnight, changed, ice, best explains, water changed, heat",
+      "Statue of Liberty, built, France, taken apart, 350 pieces, shipping, arrived, New York, put together, relationship, mass, whole statue",
+      "jeweler, melts, gold, mass",
+      "electrical circuit, flashlight",
+      "acquired trait, environmental influences",
+      "protect, water resources, Virginia, action, help",
+      "esophagus, digestion, carries, food",
+      "ice, rock, aluminum, common",
+      "DNA, not describe, stores, waste products",
+      "pollen, moves, plant, Wind, Bees, Butterflies",
+      "Ears perking up, someone approaches, front door, bringing back, thrown Frisbee",
+      "flute, sound, produced, air, vibrating",
+      "salt, sugar, mixed, physical properties",
+      "rotation, revolution",
+      "object, reflect, light",
+      "object, moves, towards, magnet, attracted",
+      "roller skate, seesaw, skateboard, bicycle",
+      "difficult, see, shadow, cloudy day, sunny day",
+      "sheet of paper, crumples, property, changed",
+      "invention, personal computer, helped, most",
+      "flag, waves, wind, water",
+      "compass, balance, ruler, tape measure",
+      "push, pull, object, force",
+      "fox, forest fire, frog, pond, dried up, beaver, finished, building, dam, rabbit, food, gone, drought",
+      "eliminate waste materials",
+      "adapt, surroundings, survive",
+      "Marni, runs, 1500 meters, track, find out, speed, her time from start to finish",
+      "Apollo 11 mission, retrieve samples, Moon's surface, first mission, astronauts, land on the Moon",
+      "ball, tossed, up, air, comes, back down, gravity",
+      "Earth, Sun, brighter, star, closest",
+      "water, fills, crack, rock, freezes, expands, overnight",
+      "rocks, imprints, seashells, formed",
+      "sailor, fishing, lost at sea, direct, boat, shore, object",
+      "algae, water, discovered, red algae, Knight Island, Prince William Sound, positive effect, discovery",
+      "steam, cook food, steam, form of water, transfer heat, cooler objects",
+      "comparison, ecosystems, true",
+      "jet stream, characteristic",
+      "combination, processes, water cycle, cause, flooding",
+      "dog, sees, cat, message, travels, eyes",
+      "population, increase, size, food",
+      "Sound waves, light energy, similar, move",
+      "Sound, travel",
+      "leaves, group, shape, science process, put",
+      "ice, pan, flame, change",
+      "erode, shores, river, flood, wind, frost, plant rooting",
+      "considered, adult stage, growth",
+      "Angela, report, daily weather conditions, air temperature",
+      "advantage, competition",
+      "ability, hold water, greatest effect, soil particles, size",
+      "melting, occurred",
+      "container, food storage, does not break easily, airtight, inexpensive, microwave-safe",
+      "skin, chameleon, change colors, blend, surroundings, adaptation, survive",
+      "rain, animals, hibernate, migrate, change, body covering, move, seek, shelter",
+      "liquid water, become, solid",
+      "plant, produces, seeds, flower",
+      "water, evaporated, particles, spread out, air",
+      "single-celled, organism, amoeba",
+      "human activity, harmful effect, environment, polluting",
+      "traits, distinguish, bird, vertebrates",
+      "property, water, break apart",
+      "deliver, oxygen, muscle cells, circulatory",
+      "ice, change, shape, rocks",
+      "inherited traits, fingerprints, nose shape",
+      "eat pizza, digested, provide, energy, example, extracting, kind",
+      "hummingbird, nectar, flower, pollen, role, life cycle, flowering plant",
+      "process, plant, increases, size",
+      "Copper, house wiring, electrical conductor",
+      "water cycle, closely related, weather",
+      "computer, performs, function, similar, human body",
+      "measuring, temperature, lake water, thermometer",
+      "burn, piece of paper, property, changed",
+      "Wind, changes, surface, Earth, transportation, deposition, sand dune",
+      "hypothesis, easily tested, Moon, high tides",
+      "tool, measure, volume, liquid, graduated cylinder",
+      "wetland habitat, support, birds, fish, people, leave the land alone",
+      "recycles, animal and plant waste, adds nutrients, soil, decomposers, fungi",
+      "wire, switch, battery",
+      "Light, refracted, least, passing through",
+      "watching, weather report, wear, skirt, short-sleeved shirt, BEST, information, choose, clothes",
+      "radio station tower, primary function",
+      "evaporation, disappear",
+      "Plants, animals, basic needs, providing",
+      "aluminum, wood, plastic, conduct electricity, testing",
+      "burned, chemical change",
+      "electromagnet, important, component, machine",
+      "mass, five different rocks, use, pan balance",
+      "NOT, description, compounds",
+      "part of a leaf, release, water, oxygen, stomata",
+      "magma, form, cools, hardens",
+      "glass, lemonade, ice, countertop, moisture, relates, process, water cycle",
+      "Energy, sun",
+      "phase of matter, particles, most definitive shape",
+      "white rabbit, protected, predators",
+      "air, breathe, nitrogen, oxygen",
+      "Minerals, formed, process",
+      "leaves, small white spots, tool, better look",
+      "units, measure, rain, thunderstorm",
+      "travel, quickly, far away places, invention",
+      "roots, protect, soil, wind erosion",
+      "Young frogs, resemble, adult frogs, pattern of development, frogs, metamorphosis",
+      "consumer, materials, dead plants, animals, soil, air, water",
+      "car, small gasoline engine, battery-powered electric motor, stops, red light, gasoline engine, stops running, electric motor, begins working, benefit, people, likely",
+      "Cars, trucks, create, gases, harmful, atmosphere",
+      "oxygen, produce, photosynthesis",
+      "deer, looking",
+      "support, protect",
+      "desert, animal, survive, general characteristics",
+      "rapid changes, caused by heat, inside Earth, landslides, volcanoes, avalanches, floods",
+      "dog food, gave, both types, same time, recorded, observations",
+      "liquid, removes grease, keeps, skin, soft",
+      "mechanical energy, wagon, rolling, hill",
+      "rains, water, collect, clouds",
+      "tablet, water, gas bubbles, example",
+      "rock, lava, temperature, higher",
+      "baseball strikes, paint cracks, exposed metal rusts",
+      "microorganism, benefits, plants, fungi",
+      "force, pulls, marble, bottom, gravity",
+      "Grand Canyon, example, erosion",
+      "tilt of Earth, axis, causes, summer, warmer, winter, Northern Hemisphere, (B) The rays of the Sun strike the Northern Hemisphere more directly in the summer",
+      "order, succession, natural communities, New York State",
+      "compete, factor",
+      "planting, lemon tree, cold winter temperatures, Massachusetts, best solution, problem, building, greenhouse, shelter",
+      "heart, plastic, labeled, clay, Earth, planets, plastic, plant cell, removable, cell parts, examples",
+      "reproductive system, produces, sperm, egg cells",
+      "carpet, slowed, stop, friction",
+      "birds, fly, south, winter, adaptation",
+      "lift, rock, simple machine",
+      "protein, important, healthy diet",
+      "harmful, waste material, leaves, blood, travels, lungs, leaving, body, CO2",
+      "eats, plants, meat",
+      "digestion, begins, humans, mouth, chewing, saliva",
+      "change, energy, television, turned on",
+      "Sand, iron particles, size, color, method, separating, best",
+      "shallow container, salt water, sunlight, evaporate",
+      "observation, measurement, recording",
+      "Moon, best describes",
+      "Paula, property, marble, balance, graduated cylinder",
+      "inherit, parents, trait",
+      "molecules, vibrate, force, vibrations",
+      "Frogs, lay eggs, develop, tadpoles, adult frogs, example, living things, go through, life cycle",
+      "length of time, animal's birth, death, called",
+      "tiger, get, stripes",
+      "bones, extinct, flying dinosaur, discovered, discovery, learn, history, animal species, Earth",
+      "fertilizer, tomato plants, investigation, amount, added",
+      "paper bag, ripped, pieces",
+      "atoms, collide, move, independently",
+      "chemical property, density, boiling point, flammability",
+      "research projects, best choice, student, interested, environmental issues",
+      "NOT true, survive well, do not survive well, cannot survive, always survive",
+      "stars, seen, sky, night, Sun, brighter",
+      "energy, food, before, digested",
+      "water, ice, soil",
+      "green algae, supply, fungi, symbiotic relationship",
+      "Heat, deep in Earth's interior, transferred, crust, (B) convection, mantle",
+      "measurements, volume",
+      "influence, change, motion, speed, direction",
+      "measure, quantity, rainfall, storm, tool",
+      "shipping, improvements, effect, people, increased, types of food",
+      "sunrise, New York City, east coast, Los Angeles, west coast, United States",
+      "hurricanes, tornadoes, always, high winds",
+      "resource, gasoline, fossil fuels",
+      "Mold, old bread, food chain",
+      "appearance, constellation, change, night",
+      "friction, parts, heat, reduces",
+      "spiders, eight legs, eight eyes, help, survive",
+      "Seeds, inactive, right conditions, light, water, soil",
+      "species, no longer, reproduce, extinct",
+      "picture, well-ordered arrangements, atoms, molecules, substance, instruments",
+      "One moon-phase cycle, One ocean-tide cycle, acorn growing, adult tree, caterpillar, butterfly",
+      "changes, energy",
+      "harp seals, extreme conditions, adapted, cold, survive, winters",
+      "volcano, ocean, releases, lava, cools, hardens, ocean floor",
+      "human offspring, inherit, blue eyes",
+      "density, air, breeze, Sun, energy transfers, diagram",
+      "phases, matter, solid, liquid, gas",
+      "exercise, heart rate, students, before, after, running, track, compare",
+      "motion, described, position, direction, speed",
+      "Thorns, stems, protecting, eaten",
+      "organisms, produces, energy, sunlight, grass",
+      "pencil, falls, desk, moves, floor, gravity",
+      "nervous system, structures, nerves, spinal cord, brain",
+      "weather, breaks down, solid structure, Earth, rock",
+      "rock, imprints, shells, conclude, area, ocean, river",
+      "consume wastes, obtain, nutrients, survive, classified",
+      "feeders, lights, signs, bridges",
+      "feather, feels, soft",
+      "water vapor, condenses, clouds, warm conditions",
+      "main feature, parallel circuit, multiple paths, current flow",
+      "motion, slow down, stop, friction",
+      "sample of water, jar, no cover, sits, classroom, weekend, empty, returns, Monday, evaporated",
+      "Celsius thermometer, 8 degrees, activity",
+      "ice-cold water bottle, car, thirty minutes, water surrounding, outside, happened",
+      "dogs, characteristics, parents, inherit",
+      "water, rocks, interact, stream",
+      "species, carnivorous, share, habitat, ecosystem, compete, food",
+      "process, plants, animals, increase, size",
+      "organism, survive, environment, changing, ability, species, adapt",
+      "Smoking, cigarettes, drinking, alcohol, harmful, organs, lungs, liver",
+      "leaf, centimeters, using",
+      "liquids, bubbles, ruler, largest",
+      "Malaria, common disease, cause",
+      "Earth, one revolution, around the sun",
+      "measurement, mass, object",
+      "Animals, fight, threatening sounds, act aggressively, same species, competition",
+      "bulb, giving off light, example",
+      "chromosomes, nucleus, cell, purpose, store, genetic instructions, specify, traits",
+      "magnet, placed, string, hang, freely, above, south pole, hangs, down, most likely",
+      "oak tree, ecosystem, source of food, shelter",
+      "greatest mass, brick, soccer ball, note pad, quarter",
+      "temperature, 16 degrees Celsius, 61 degrees Fahrenheit, precipitation, solid form",
+      "iron nail, wrapped, copper wire, attached, circuit, forms",
+      "object, reflects, light",
+      "plants, plant light, helping, providing light, make food",
+      "changes, seasons, Earth, tilt, axis",
+      "jump, air, come back down, ground, happens",
+      "seeds, oak, come from, fruit",
+      "Producers, first source, food chain",
+      "Jordan, large toy, small toy, bigger splash, larger brother, jump, swimming pool",
+      "waste product, excreted, lungs, Carbon dioxide",
+      "sleet, rain, snow, hail, forms",
+      "organisms, convert, solar energy, raw materials, food",
+      "repeat, experiment, several times, collect, data, fit, hypothesis, determine, results, similar",
+      "iron filings, wire, attracts",
+      "Sun, Moon, appear, same size",
+      "instrument, measure, air pressure, barometer",
+      "student, small rock, half way up, hill, increase, potential energy",
+      "magnesium, burned, oxygen, magnesium oxide, produced, properties, different",
+      "animal, specialized cells, change color, rapidly, hide, predators",
+      "toy car, rolls, farther, wood floor, thick carpet",
+      "slice, onion, microscope, shapes, likely, atoms, dust, cells, bubbles",
+      "results, experiment, support, hypothesis, repeat, errors",
+      "car skids, smoke, coming, under the tires, heat, produces, caused by, friction",
+      "bacteria, significant trait changes",
+      "pencil, bicycle, paper clip, pair of shoes",
+      "scientist, measuring, amount of movement, fault, tool",
+      "exercising, good health habit",
+      "physical properties, iron nail, conducts heat, magnetic, solid",
+      "Ella, raising fish, aquarium, three fish, water",
+      "measuring, volume, liquid, soda cap",
+      "protected, enemies, characteristic",
+      "dogs, long hair, run faster, short hair",
+      "caterpillar, relying, producer, food, leaves, tree",
+      "nighttime, daytime, Earth, rotating, revolving, Sun",
+      "muscular, skeletal, movement",
+      "clouds, falls, Earth, precipitation",
+      "temperature, water, rises, 0\u00b0F, 100\u00b0F, changes of state",
+      "function, trees, planet, danger, deforestation, (A) Carbon dioxide production, (B) Oxygen production, (C) Oxygen usage",
+      "chemical reaction, body, play sports",
+      "pencil, edge, desk, potential energy",
+      "arctic fox, caribou, polar bear, permafrost, snowy owl, ecosystem",
+      "measure, volume, liquid, graduated cylinder",
+      "rose, thorns, avoid, eaten, example",
+      "living, California's desert",
+      "Decomposers eat, energy, dead plants, animals",
+      "earthquakes, occur, plates, shifting",
+      "trees, release, gases, air, photosynthesis, carbon dioxide, hydrogen, nitrogen, oxygen",
+      "Water, freezing, example, liquid, solid",
+      "children, resemble, parents, similar DNA",
+      "orange, represent, Earth",
+      "instrument, measure, 10 milliliters (mL), water",
+      "light bulb, lit, battery, give off",
+      "pump, blood",
+      "tree, special seeds, fire, destroyed, growth",
+      "atoms",
+      "rock, organic matter, mixture",
+      "seeds, grow, process",
+      "puddles, water, dry, afternoon, evaporated",
+      "graduated cylinder, measure, space, occupied, substance, known as",
+      "student, separate, iron shavings, salt, tool, use, Magnet",
+      "Cell, organs, organ systems",
+      "tool, measure, growth, plant's stem",
+      "repeating, experiment, improve, likelihood, accurate",
+      "separate, mixture, salt, pepper",
+      "twins, identical, genes",
+      "soil, erode, river bank, few days, water, flood",
+      "senses, detect, echoes, bat, send out, prey",
+      "types of bacteria, grow, investigation, avoid, performing",
+      "activities, all species, living things, grow, reproduce",
+      "Earth's layers, relationship, hottest, liquid, lightest, metallic, core, crust",
+      "rains, animals, hibernate, migrate, change, body covering, move, seek, shelter",
+      "poor health habit, eating candy, instead, lunch",
+      "problem, using, wind turbines, produce, energy",
+      "deer, eat, plants, forest floor, energy, left, area",
+      "butterfly eggs, hatch, young, called",
+      "competition, occur",
+      "water vapor, upper atmosphere, freezes",
+      "take over nests, reproduce quickly, increases, helping",
+      "species, unable, adapt, changes, environment, effects, likely",
+      "producers, most food, summer, sunlight",
+      "animals, carry, seeds, berries, parent plant, another area",
+      "Toads, eggs, ponds, tadpoles, plants, survive",
+      "coal, produce, electricity",
+      "liquid water, example",
+      "Earth's orbit, Sun",
+      "desk, corner, fit",
+      "Irving, sailing, ocean, needle, compass, point",
+      "floating arrow, compass, points, towards, north",
+      "igneous rock, eroded, deposited, bottom, lake, change, sedimentary rock, bigger, metamorphic rock",
+      "water, pond, colder, observe, temperature, thermometer",
+      "life cycle, moth, best describes",
+      "event, large rock, become, soil, over time",
+      "environments, organisms, compete, resources, grass, weeds, plants, water",
+      "mineral, nonmetallic luster, black, scratched, fingernail",
+      "purple dye, made, sea animals, 1856, William Perkins, coal, positive effect, discovery",
+      "seedling, seed, plant",
+      "fossil fuels, found, Underground",
+      "force, slow down, block, ramp, friction",
+      "unicellular, organisms, cell, life functions",
+      "number of plants, survive, forest",
+      "conserv, energy, add insulation, roof, walls, less heat escapes",
+      "Earth's water, located",
+      "form of energy, found, food, chemical",
+      "organisms, evolution, rapidly, bacteria",
+      "change, water, liquid, solid, decrease, temperature",
+      "time, Moon, complete cycle, phases, viewed, Earth, approximately",
+      "energy, pedal, bicycle",
+      "characteristic, dog, environment, food preference, ability, see, dark",
+      "purpose, preforming, experiment, test, hypothesis",
+      "Reproduction, animals, produce, offspring",
+      "environment, warmer, drier, adapt, increase",
+      "clock, measuring tape",
+      "air, beach ball, pushed",
+      "animal, sharp teeth, more likely, carnivore",
+      "create, heat, cold, weather, shivering",
+      "seed develops inside fruit, seed is dispersed, seed germinates, plant grows",
+      "rubbed, mineral, red mark",
+      "climate",
+      "inherited, learned, characteristic, blue eyes",
+      "sugar, spices, salt, peanuts, stirs, together, made",
+      "blocks, different material, examine, metal",
+      "Extinction, occur, result, environmental changes",
+      "mixture, sand, water, separated, best",
+      "action, large rocks, smaller pieces, weathering, wind, water",
+      "tape measure, building, doghouse, determining, cut, wood",
+      "perform, investigation, results, hypothesis",
+      "daily cycle, high and low tides",
+      "renewable energy sources, Solar",
+      "fishing, using water, produce electricity, directing, runoff, cropland, into, lake",
+      "wooden block, sandpaper, increases",
+      "green sea turtles, migrate, reproduce",
+      "seconds, minutes, hours, weeks, months, based on",
+      "pair, elements, most similar, properties",
+      "single-celled organisms, multicellular organisms, have in common",
+      "discover, new planet, looking, night sky, telescope",
+      "food, oxygen, true",
+      "research scientist, observes, bird, avoiding, specific butterfly species",
+      "jar, pickles, bottle, juice, can, mixed fruit",
+      "hardness, taste, texture, examples",
+      "book, sitting, shelf, ball, rolling, hill, runner, start, race, window, hot, sun",
+      "green plants, make, food, called",
+      "freezing and thawing, exfoliation, oxygen, plants",
+      "protects, eyes, goggles",
+      "separate, steel, plastic, paperclips",
+      "population, small fish, lake, large fish, depend, food",
+      "organisms, similar needs, compete, natural resources, limited",
+      "Matter, vibrating, producing",
+      "Earth's rotation, axis, causes, seasons, day and night",
+      "boiling point, salt, water mixture, temperature measurement, 105\u00b0C, ensure, valid, repeat, investigation",
+      "velocity, moving object",
+      "temperature, pure water, boil",
+      "body system, processes, foods, useable, energy",
+      "Sharpening, pencil, new substance, stretching, rubber band, crumbling, stale bread, frying, eggs, breakfast",
+      "animal, preparing, seasonal change, environment, squirrel, storing nuts",
+      "mixtures, easiest, separate, Fruit salad, Powdered lemonade, Hot chocolate, Instant pudding",
+      "experiment, growing, plants, dark room, window, faster, sunlight",
+      "muscle, pumps, blood, body, Heart",
+      "eagle, bird, reproduces, eggs, nest, similar, amphibian, fish, mammal, reptile",
+      "butterfly's life cycle, needed",
+      "magnets, repel, push",
+      "length, meter stick",
+      "adaption, changing, more suitable",
+      "groups, includes, others",
+      "energy, breathing, move muscles, pump blood",
+      "mixture, magnet, particles, sand, dark, element",
+      "stages, life cycle, butterfly, occurs, first",
+      "digestive system, carries, food, circulatory system",
+      "water flushing, wind pushing, ice cracking",
+      "sleet, hail, forms, precipitation",
+      "female, lay eggs, insect's life cycle",
+      "glacier, chunks of ice, melt",
+      "decrease, polar bear population, arctic, increase, fish population",
+      "Humans, natural resource, environment, water",
+      "feature, physical property, copper, insulates heat, conducts electricity, strong magnetic force, liquid, room temperature",
+      "adaptation, attract a mate, coloration",
+      "sand dunes, gone, wind blew, deposited",
+      "evaporation, example, water, tea kettle, vapor",
+      "wax, candle, drips, melting point",
+      "company plants trees, bare hillside, BEST reason, planting, trees prevent, soil, washing away",
+      "Sun, astronaut, Pluto, larger, brighter, smaller, dimmer",
+      "measuring, graduated cylinder, rainfall",
+      "Water, survive, bringing in gases, keeping them clean, creating food, moving materials",
+      "lab tests, water supply, people, safe to drink",
+      "Clouds, precipitation, temperature, 41\u00b0F, 28\u00b0F, likely occurred",
+      "eat, affects, ecosystem, interrelationships",
+      "orbit, around, Sun, one year",
+      "Turn, water, fill, leave, running, rinse, toothbrush, running, off",
+      "tool, used, determine, warm water, melt, ice cube",
+      "causes, day, night, Earth, tilting, rotation, movement",
+      "increase, temperature, sheet, copper, heat",
+      "erosion, reduction",
+      "flowers, fruits, leaves, roots",
+      "microscopes, help, scientists, small objects, easier, see",
+      "function, chloroplasts, plant cell, absorb light energy, make food",
+      "light bulb, saves energy, last, 10 times longer",
+      "humans, maintain, good health, exercise daily",
+      "sound, bell, carries, student, vibrating air",
+      "Planets, solar years, Earth solar year",
+      "variety of coral, classified as, animal, cannot make its own food",
+      "safety goggles, laboratory, using fire, handling chemicals",
+      "laying, egg, example, Reproduction",
+      "analyzing, ice cores, data, correct",
+      "safety rule, important, students, working, acids, bases",
+      "seeds, oak, come from, fruit",
+      "energy, Sun, power, household appliances, converted",
+      "water, plastic tray, freezer, froze",
+      "sugar crystals, dissolved, water, windowsill, left",
+      "surface, roller-skate race",
+      "larval stage, comes after",
+      "habitat destruction, occurring, daily, human action, likely, recover",
+      "cells, work, bodies, need, nutrients",
+      "outside air temperature, same time each day, most accurate",
+      "organ, removes, cell waste, blood, kidney",
+      "structures, chlorophyll, food, Sun's energy",
+      "sediments, pressed, squeezed, compacted",
+      "feathered feet, helpful, bird, walks, deep snow",
+      "sense, reflect light",
+      "hills, much taller",
+      "characteristic, animals, reptiles, mammals, birds, amphibians, fishes",
+      "directions, compass, North, South, East, West",
+      "police, fingerprints, criminals, file",
+      "boxes of cereal, contain, 400 g, check, information, true",
+      "earthworm, tunnels, plants, soil",
+      "erosion, process, sediment",
+      "characteristic, inherited, not",
+      "electric toothbrush, plug, three metal prongs",
+      "conducting wire, plastic, protects, electrical insulator",
+      "advantage, sexual reproduction, compared, asexual reproduction, genetic variety",
+      "Decomposers, bacteria, matter, dead plants, animals, reuse, process releases",
+      "plant part, similar, bird's egg",
+      "block of wood, block of metal, placed outside, cold day, temperatures, measured, thermometer, temperature, metal decreases faster, experiment suggests",
+      "form, precipitation, frost, snow, fog, dew",
+      "student, investigating, changes, states of matter, graduated cylinder, 50 milliliters, packed snow, mass, 50 grams, empty, 95 grams, filled, snow, water cycle, snow, fall, ground",
+      "organism, decomposer, recycles nutrients",
+      "formation, sand dunes, Lake Michigan's shoreline, wind",
+      "hereditary information, human body cell, human sex cell",
+      "water, falls, sky",
+      "compass, identify, North, instrument, energy",
+      "unicellular organism",
+      "invasive, new species, harmful, stability, ecosystem",
+      "temperature, air pressure, drop, late afternoon",
+      "nonliving factors, ecosystem, except",
+      "wooden box, grandfather's garage, nailed shut, simple machine, open",
+      "force, produces, energy, heat, friction",
+      "coal, sun, compare, sources, energy",
+      "function, hormones, human body, regulate, body functions",
+      "safe practices, laboratory, tying back long hair, wearing safety goggles, performing each step quickly, wiping up spills immediately",
+      "field trip, forest, observe, study, birds, tool, helpful, observing",
+      "safer, look, Moon, Sun",
+      "theory, natural selection, best describes, happens, long period of time",
+      "first step, design process, Describe, problem",
+      "separate, steel, aluminum, recycling center, best way",
+      "Runoff, farm land, construction sites, irrigation drainage systems, lawn chemicals, polluting, drinking water",
+      "desert animals, protect, hot sun, coming out, night, sleeps, active",
+      "machine, opens, twist top, soda, (B) Screw",
+      "Darwin's, theory, animal species, change over time, inspired, research, islands",
+      "businesses, reduce waste, environmentally friendly",
+      "smooth road, moves faster, less friction",
+      "Cancer, described, abnormal cell division",
+      "sedimentary rock, transform, metamorphic rock, needs, occur",
+      "rabbit's fur, thickest, season, year, winter",
+      "Electrical energy, changed, mostly, heat energy",
+      "ages, birth dates",
+      "stage, life cycle, butterfly, eating, plant leaves, larva",
+      "change, wire, electrical circuit",
+      "Earth, one year, complete, orbit",
+      "offspring, genes, parents",
+      "oil, available, world, affect, human choice",
+      "cold climate, characteristic, most common, animals",
+      "characteristics, inherit, parents, color of its fur",
+      "scientist, bones, dinosaur, approximate, age",
+      "ducklings, follow, mother, swimming across pond",
+      "reflected sunlight",
+      "compass needle, point, North, force, magnetism",
+      "natural resources, renewable, nonrenewable, activity, nonrenewable natural resource",
+      "predator, prey, rabbit, grass, deer, tree bark, hawk, mouse",
+      "Living things, need, survive, food, water, air",
+      "Competition, occur, organisms",
+      "rocks, small crystals, minerals",
+      "activity, necessary, humans, maintain, good health, resting",
+      "windstorm, Niko, called, electric company, report, no electricity, phone call, example, universal systems model, designing a process, generating output, giving feedback, setting a goal",
+      "study, weather, reason, best",
+      "goldfish, breathing, taking in, Oxygen",
+      "fold, paper, property",
+      "people, sick, flu, attending, school dance",
+      "weight, nickel",
+      "vegetables, refrigerator, gone bad, environmentally responsible, rotten food, compost pile, plant food",
+      "Earth, Moon, common features, except",
+      "Chloroplast, leaf cells, produce glucose, photosynthesis, shape, leaves",
+      "sample, water, turns, ice",
+      "prevent, species, extinct, humans, increased, trapping, predators, attempted, mate, organisms, different species, create, new, stronger, wildlife management, habitat protection",
+      "decomposer, organism, breaks down, dead plants, animals",
+      "Northern Hemisphere, Southern Hemisphere, December, explanation",
+      "amphibian, environment, suited",
+      "Growth, nutrients, breathing, reproduction, living things",
+      "temperature, snowstorm, thermometer",
+      "example, decomposer, mushroom",
+      "oil, placed, water",
+      "fish fossils, desert, environment, alive",
+      "ball, dropped, tall building, upward force, air resistance, equal, downward pull, gravity, become, magnitude",
+      "woolly mammoth, least likely, fossil",
+      "magnet, attract, iron nail, wool cloth, wooden stick, glass marble",
+      "rocks, composed, minerals",
+      "circulatory system, main function, transport materials",
+      "anemones, sponges, squid, ecosystem",
+      "producers, Green plants",
+      "newly hatched turtles, easy prey, survival, offspring",
+      "color, shape, formed, minerals",
+      "student, investigation, valid conclusion, testable hypothesis",
+      "aluminum, plastic, sand, conduct, electricity",
+      "ability, adapt, survive, new environments"
     ],
     "gt": [
       [
@@ -88036,6 +88703,2785 @@
       ],
       [
         "happens, metal, railroad, tracks, heat"
+      ],
+      [
+        "adaptation, walrus, stay, warm, cold, water?"
+      ],
+      [
+        "glacier, create, soil?"
+      ],
+      [
+        "celestial, objects, closest, star, Earth?"
+      ],
+      [
+        "example, recycling?"
+      ],
+      [
+        "produces, magnetic, field?"
+      ],
+      [
+        "pumice, result, volcano"
+      ],
+      [
+        "explains, salmon, leave, salt, water, return, fresh, water?"
+      ],
+      [
+        "drops, water, outside, window., drops, disappeared., caused, disappear?"
+      ],
+      [
+        "days, chick, hatch, egg., number, eggs, reliable, results?"
+      ],
+      [
+        "full, moon, night., instrument, observations?"
+      ],
+      [
+        "leaves, changing, gold, orange, autumn"
+      ],
+      [
+        "method, seeds, dispersed"
+      ],
+      [
+        "ice, cube, 0\u00b0C, water, 28\u00b0C, temperature, water, ice, melts?"
+      ],
+      [
+        "study, fossils, learn"
+      ],
+      [
+        "save, animals, trees?"
+      ],
+      [
+        "force, bring, objects, Earth?"
+      ],
+      [
+        "pot, filled, water, poured, bucket., bucket, filled."
+      ],
+      [
+        "microscope"
+      ],
+      [
+        "sliding, stop, bottom, slide, type, force?"
+      ],
+      [
+        "explains, specific, eye, color?"
+      ],
+      [
+        "magnetic, pole, combinations, repel, magnets"
+      ],
+      [
+        "materials, slow, transfer, heat?"
+      ],
+      [
+        "insects, require, grow"
+      ],
+      [
+        "presence, animal, fossil, rock, evidence"
+      ],
+      [
+        "describes, parallel, circuit?"
+      ],
+      [
+        "escape, strategy, avoid, killed, predators?"
+      ],
+      [
+        "environment, animals, gills"
+      ],
+      [
+        "times, Earth, rotate, axis, day?"
+      ],
+      [
+        "show, change, happening, time, display, results"
+      ],
+      [
+        "system, defend, body, disease?"
+      ],
+      [
+        "living, component, desert, California?"
+      ],
+      [
+        "instrument, measure, air, pressure?"
+      ],
+      [
+        "natural, constructive, destructive, forces"
+      ],
+      [
+        "number, chromosomes, human, liver, cell?"
+      ],
+      [
+        "Humans, dependent, environment"
+      ],
+      [
+        "conduction, heat, materials., identically-sized, blocks, wood, hot, plates., top, piece, ice, hot, plate, variable, measure, determine, material, conductor, of"
+      ],
+      [
+        "empty, bottle, lid, attached., squeezes, property, air, unchanged?"
+      ],
+      [
+        "Clouds, get, water"
+      ],
+      [
+        "frozen, water, changes, temperature, air, increases?"
+      ],
+      [
+        "plant, protects, eaten"
+      ],
+      [
+        "observations, describe, weather?"
+      ],
+      [
+        "sign, apple, tree, growing, apples"
+      ],
+      [
+        "squirrel, gathering, nuts, helps, trees"
+      ],
+      [
+        "process, occurs, photosynthesis?"
+      ],
+      [
+        "clay, sinks, water., property, change, float?"
+      ],
+      [
+        "wear, lighter, colored, clothing, summer?"
+      ],
+      [
+        "disadvantage, moving, water, produce, electricity?"
+      ],
+      [
+        "transfer, thermal, energy"
+      ],
+      [
+        "solar, system"
+      ],
+      [
+        "electromagnet, turned, required, operation"
+      ],
+      [
+        "pot, stove., process, causes, metal, handle, become, hot?"
+      ],
+      [
+        "change, Earth's, surface, related, water, cycle?"
+      ],
+      [
+        "energy, resource, renewable?"
+      ],
+      [
+        "plants, animals, different?"
+      ],
+      [
+        "Living, depend, energy"
+      ],
+      [
+        "sound, energy, changed"
+      ],
+      [
+        "breaking, food, substances, occurs"
+      ],
+      [
+        "galaxy, cluster"
+      ],
+      [
+        "process, light, bend, rainbow?"
+      ],
+      [
+        "function, cardiovascular, system?"
+      ],
+      [
+        "organism(s), food, chain, decomposed, bacteria?, Maple, Tree, Ants, Woodpecker"
+      ],
+      [
+        "greatest, effect, color, eagle's, eyes?"
+      ],
+      [
+        "Humans, bacteria, inside, outside, body."
+      ],
+      [
+        "result, competition?"
+      ],
+      [
+        "plants, reproduce?"
+      ],
+      [
+        "Melting, butter, warm, room, example"
+      ],
+      [
+        "Earth., found, Moon?"
+      ],
+      [
+        "moon, see, small, portion., phase"
+      ],
+      [
+        "batteries, energy., energy, transformation"
+      ],
+      [
+        "determine, block, material, magnetic?"
+      ],
+      [
+        "1800s, axes, farmland., chainsaws, help"
+      ],
+      [
+        "oven, door, opened, baking, decrease?"
+      ],
+      [
+        "non-living, component, rain, forest, ecosystem?"
+      ],
+      [
+        "Sun, appears, larger"
+      ],
+      [
+        "force, pulls, toward, Earth"
+      ],
+      [
+        "environmental, changes, months, years?"
+      ],
+      [
+        "causes, solar, eclipse?"
+      ],
+      [
+        "Earth, layers, greatest, density?"
+      ],
+      [
+        "invention, telescope, allowed, following, take, place?"
+      ],
+      [
+        "hatched, egg., stages, comes, next, cycle"
+      ],
+      [
+        "cell, survive, without, cells?"
+      ],
+      [
+        "temperature, 5\u00b0C, -1\u00b0C., water, change?"
+      ],
+      [
+        "activities, high-quality, soil?"
+      ],
+      [
+        "Beaver, dams, floods., shows"
+      ],
+      [
+        "relationship, Earth's, rotations, Sun?"
+      ],
+      [
+        "Solar, radiation, water, cycle"
+      ],
+      [
+        "removal, decomposers, ecosystem, effect"
+      ],
+      [
+        "nonliving, part, river"
+      ],
+      [
+        "months, coldest, Northern, Hemisphere?"
+      ],
+      [
+        "Living, things, fewer, survive"
+      ],
+      [
+        "car, push, wooden, floor., pushes, car, cement, floor., question, investigating?"
+      ],
+      [
+        "relationship, bees, flowers, example"
+      ],
+      [
+        "two, different, melting, points., separate, two, liquids., classifies, original, substance?"
+      ],
+      [
+        "characteristic, beardfish, survive, dark?"
+      ],
+      [
+        "energy, source, drives, weather"
+      ],
+      [
+        "resources, renewable?"
+      ],
+      [
+        "change, new, substance, formed, different"
+      ],
+      [
+        "waves, crash, beach., describes, happen, waves?"
+      ],
+      [
+        "best, definition, ecosystem?"
+      ],
+      [
+        "living, thing?"
+      ],
+      [
+        "Timber, companies, manage, number, trees, forests"
+      ],
+      [
+        "Oxygen, given, taken"
+      ],
+      [
+        "tree, grass, alike?"
+      ],
+      [
+        "devices, prevent, electrical, current, overloading"
+      ],
+      [
+        "chart, represent, temperature, warm, water, five, cups"
+      ],
+      [
+        "Winds, caused, differences"
+      ],
+      [
+        "goat, energy, grass, grass, get, energy?"
+      ],
+      [
+        "human, quality, want, study, different, things?"
+      ],
+      [
+        "Astronauts, weigh, Earth, moon"
+      ],
+      [
+        "tool, best, counting, legs, ant?"
+      ],
+      [
+        "function, turtle's, shell?"
+      ],
+      [
+        "hypothesis, grow, shady, relationships, hypothesis?"
+      ],
+      [
+        "weather, event, heavy, strong, air, temperatures, 0\u00b0C?"
+      ],
+      [
+        "gills, change, lungs., need, survive?"
+      ],
+      [
+        "metal, rod, struck, vibrate., next?"
+      ],
+      [
+        "series, circuit, light, bulb"
+      ],
+      [
+        "process, plants, make, food?"
+      ],
+      [
+        "prevented, eating, oranges, lemons., scurvy, caused"
+      ],
+      [
+        "Green, plants, energy, food"
+      ],
+      [
+        "energy, food., type, energy, plants, food?"
+      ],
+      [
+        "instrument, measure, mass, object?"
+      ],
+      [
+        "processes, water, cycle, creation, lake?"
+      ],
+      [
+        "change, fur, color, Arctic, brown, white"
+      ],
+      [
+        "fungus, decomposer."
+      ],
+      [
+        "fox, find, food?"
+      ],
+      [
+        "genetically, inherited?"
+      ],
+      [
+        "tool, determine, mass"
+      ],
+      [
+        "food, dog, likes, best., manipulated, variable"
+      ],
+      [
+        "Isaac, Newton, gravity, discovered, force, causes"
+      ],
+      [
+        "squirrels, sleep, long, winter, causes, squirrels, sleep, long, periods"
+      ],
+      [
+        "Increased, humidity, result"
+      ],
+      [
+        "causes, ship's, iron, anchor, sink"
+      ],
+      [
+        "composed, pieces, living, nonliving, materials."
+      ],
+      [
+        "explains, soils, alike?"
+      ],
+      [
+        "Moon, one, orbit, Earth."
+      ],
+      [
+        "substance, combine, water, form, solution?"
+      ],
+      [
+        "moose, learned, behavior, protect"
+      ],
+      [
+        "reason, irradiate, fruits, vegetables"
+      ],
+      [
+        "electrical, circuit, battery, light, bulbs., linked, SERIES., happen, one, lights, burns, out?"
+      ],
+      [
+        "example, inherited, behavior?"
+      ],
+      [
+        "respiratory, circulatory, systems., similar"
+      ],
+      [
+        "describes, renewable, natural, resource?"
+      ],
+      [
+        "guitar, string, sound, produced"
+      ],
+      [
+        "rock, type, pumice?"
+      ],
+      [
+        "behavior, animals, establish, territory?"
+      ],
+      [
+        "animal, oxygen?"
+      ],
+      [
+        "roots, grow, dirt?"
+      ],
+      [
+        "water, freezer, overnight., explains, water, changed, ice?"
+      ],
+      [
+        "350, pieces, mass, 350, pieces, mass, whole, statue?"
+      ],
+      [
+        "gold, mass"
+      ],
+      [
+        "powered, electrical, circuit?"
+      ],
+      [
+        "kitten, acquired, trait, environmental, influences?"
+      ],
+      [
+        "action, protect, water, resources, Virginia?"
+      ],
+      [
+        "role, esophagus, digestion?"
+      ],
+      [
+        "aluminum, common?"
+      ],
+      [
+        "describe, DNA?"
+      ],
+      [
+        "pollen, moves, plant"
+      ],
+      [
+        "learned, behavior, dog?"
+      ],
+      [
+        "sound, produced, air, flute"
+      ],
+      [
+        "physical, properties, salt, sugar, mixed?"
+      ],
+      [
+        "year, equivalent, one"
+      ],
+      [
+        "reflect, light?"
+      ],
+      [
+        "object, moves, towards"
+      ],
+      [
+        "example, wheel, axle?"
+      ],
+      [
+        "difficult, see, shadow, cloudy, day"
+      ],
+      [
+        "crumples, paper., property, changed?"
+      ],
+      [
+        "personal, computer, helped, people"
+      ],
+      [
+        "example, weathering?"
+      ],
+      [
+        "growth, rate, hamsters, tools, measure, grown, except"
+      ],
+      [
+        "push, pull, object"
+      ],
+      [
+        "animal, stay"
+      ],
+      [
+        "function, excretory, system?"
+      ],
+      [
+        "organisms, able, adapt, happen"
+      ],
+      [
+        "runs, 1500, meters, know, find, speed?"
+      ],
+      [
+        "Apollo, 11, mission, retrieve, samples, Moon's, surface, astronauts"
+      ],
+      [
+        "ball, tossed"
+      ],
+      [
+        "Sun, appears, brighter"
+      ],
+      [
+        "water, fills, crack, water, freezes, expands, crack, becomes, larger., process, called"
+      ],
+      [
+        "rocks, imprints, seashells., likely, formed"
+      ],
+      [
+        "lost, object, direct, boat, shore?"
+      ],
+      [
+        "discovered, new, type, red, algae, statement, positive, effect"
+      ],
+      [
+        "steam, used, cook, food?"
+      ],
+      [
+        "comparison, ecosystems, true?"
+      ],
+      [
+        "characteristic, jet, stream?"
+      ],
+      [
+        "processes, water, cycle, cause, flooding?"
+      ],
+      [
+        "dog, sees, message, travels, eyes"
+      ],
+      [
+        "population, increase, increase"
+      ],
+      [
+        "Sound, waves, light, energy, similar"
+      ],
+      [
+        "Sound, travel"
+      ],
+      [
+        "group, leaves, shape., process, leaves, groups?"
+      ],
+      [
+        "ice, cube, pan., flame., change"
+      ],
+      [
+        "natural, process, erode, shores, river, quickest?"
+      ],
+      [
+        "human, reached, adult, stage?"
+      ],
+      [
+        "unit, air, temperature?"
+      ],
+      [
+        "advantage, competition?"
+      ],
+      [
+        "greatest, effect, soil, hold, water?"
+      ],
+      [
+        "melting, occurred?"
+      ],
+      [
+        "container, food, storage, break, easily, microwave-safe., best, material"
+      ],
+      [
+        "skin, chameleon, change, colors, blend, adaptation, chameleon, survive?"
+      ],
+      [
+        "animals, will"
+      ],
+      [
+        "make, liquid, water, solid?"
+      ],
+      [
+        "part, produces, seeds?"
+      ],
+      [
+        "happened, particles, water, evaporated?"
+      ],
+      [
+        "example, single-celled, organism?"
+      ],
+      [
+        "activity, harmful, effect, environment?"
+      ],
+      [
+        "traits, distinguish, bird, vertebrates?"
+      ],
+      [
+        "property, water, rock, break"
+      ],
+      [
+        "body, system, deliver, oxygen, muscle, cells?"
+      ],
+      [
+        "ice, change, shape, rocks?"
+      ],
+      [
+        "inherited, traits?"
+      ],
+      [
+        "eat, digested, energy., example, extracting, energy?"
+      ],
+      [
+        "role, hummingbird, life, cycle, flowering, plant?"
+      ],
+      [
+        "process, plant, increases, size"
+      ],
+      [
+        "Copper, used, house, wiring"
+      ],
+      [
+        "water, cycle, related"
+      ],
+      [
+        "computer, computer, robot, similar, part, body?"
+      ],
+      [
+        "tool, measuring, temperature, lake, water?"
+      ],
+      [
+        "burn, property, changed?"
+      ],
+      [
+        "land, formations, result, transportation, deposition, wind?"
+      ],
+      [
+        "hypothesis, easily, tested?"
+      ],
+      [
+        "tool, measure, volume, liquid"
+      ],
+      [
+        "wetland, support, birds, fish, people"
+      ],
+      [
+        "component, food, chain, recycles, animal, plant, waste, nutrients, soil?"
+      ],
+      [
+        "needed, create, simple, circuit?"
+      ],
+      [
+        "Light, refracted, least"
+      ],
+      [
+        "weather, skirt, short-sleeved, shirt., weather, descriptions, BEST, information"
+      ],
+      [
+        "primary, function, radio, station, tower, communication, system?"
+      ],
+      [
+        "2, cm, all, pan, caused"
+      ],
+      [
+        "Plants, help, animals, basic, needs, providing"
+      ],
+      [
+        "test, plastic, conduct, electricity?"
+      ],
+      [
+        "causes, chemical, change?"
+      ],
+      [
+        "electromagnet, component"
+      ],
+      [
+        "measure, mass, use"
+      ],
+      [
+        "description, compounds?"
+      ],
+      [
+        "part, leaf, plants, release, water, oxygen?"
+      ],
+      [
+        "Igneous, rocks, form, magma"
+      ],
+      [
+        "lemonade, ice., leaves, glass, countertop, ten, outer, part, glass, moisture, example, process, water, cycle?"
+      ],
+      [
+        "Energy, sun, called"
+      ],
+      [
+        "phase, matter, particles, definitive, shape?"
+      ],
+      [
+        "environment, white, rabbit, protected, predators?"
+      ],
+      [
+        "element, makes, air, breathe."
+      ],
+      [
+        "Minerals, formed, process?"
+      ],
+      [
+        "growing, plants, white, spots, leaves., tool, look"
+      ],
+      [
+        "units, measure, rain, thunderstorm?"
+      ],
+      [
+        "invention, help, travel, quickly, far, away"
+      ],
+      [
+        "roots, protect, soil."
+      ],
+      [
+        "Young, adult, term, pattern, development, frogs?"
+      ],
+      [
+        "consumer, puts, materials, dead, back, water"
+      ],
+      [
+        "small, gasoline, engine, combined, battery-powered, electric, motor., type, car, benefit, people?"
+      ],
+      [
+        "Cars, trucks, create"
+      ],
+      [
+        "plants, produce, photosynthesis?"
+      ],
+      [
+        "looking, tell"
+      ],
+      [
+        "jobs, skeletal, system?"
+      ],
+      [
+        "desert, animal, survive, characteristics?"
+      ],
+      [
+        "changes, heat, inside, Earth?"
+      ],
+      [
+        "two, types, dog, food, dog, food, every, day., question, answered"
+      ],
+      [
+        "liquid, removes, grease, skin, soft., used?"
+      ],
+      [
+        "example, mechanical, energy?"
+      ],
+      [
+        "rains, water, collect"
+      ],
+      [
+        "effervescent, tablet, gas, bubbles., formation"
+      ],
+      [
+        "difference, rock, lava, temperature"
+      ],
+      [
+        "baseball, strikes, roof, dents, paint, crack, exposed, metal, causing, hole, chemical, change?"
+      ],
+      [
+        "microorganism, benefits, plants?"
+      ],
+      [
+        "force, pulls, bottom"
+      ],
+      [
+        "Grand, Canyon, example"
+      ],
+      [
+        "tilt, Earth, axis, summer, warmer, winter, Northern, Hemisphere?"
+      ],
+      [
+        "order, succession, natural, communities, New, York"
+      ],
+      [
+        "factor, species, compete, less?"
+      ],
+      [
+        "plant, lemon, tree, cold, winter, kill, solution"
+      ],
+      [
+        "heart, plastic, parts, labeled, clay, Earth, giant, plastic, plant, cell, examples"
+      ],
+      [
+        "organ, system, produces, sperm, egg"
+      ],
+      [
+        "pushed, fast, slowed, stop, carpet., explains, happened, car, reached, carpet?"
+      ],
+      [
+        "birds, fly, south, winter."
+      ],
+      [
+        "simple, machine, BEST, lift"
+      ],
+      [
+        "protein, healthy, diet?"
+      ],
+      [
+        "harmful, waste, leaves, blood, lungs, body?"
+      ],
+      [
+        "describes, omnivore?"
+      ],
+      [
+        "digestion, process, begins"
+      ],
+      [
+        "change, energy, television, on?"
+      ],
+      [
+        "Sand, iron, similar, size, color, mixed, method, separating, particles?"
+      ],
+      [
+        "salt, water, sunlight, day., result?"
+      ],
+      [
+        "situation, observation, measurement?"
+      ],
+      [
+        "describes, Moon?"
+      ],
+      [
+        "marble, balance, graduated, cylinder., property"
+      ],
+      [
+        "trait, children, inherit, parents?"
+      ],
+      [
+        "book, molecules, vibrate, force, produced"
+      ],
+      [
+        "Frogs, eggs, tadpoles, frogs., sequence"
+      ],
+      [
+        "time, birth, death"
+      ],
+      [
+        "tiger, stripes?"
+      ],
+      [
+        "bones, extinct, flying, dinosaur, discovered., learn"
+      ],
+      [
+        "fertilizer, plants., information, help, repeat, investigation?"
+      ],
+      [
+        "paper, bag, ripped, pieces., describes, pieces"
+      ],
+      [
+        "atoms, collide, frequently, move, independently"
+      ],
+      [
+        "chemical, property, matter?"
+      ],
+      [
+        "choice, student, interested, environmental, issues"
+      ],
+      [
+        "true, environment?"
+      ],
+      [
+        "Sun, appears, brighter, stars"
+      ],
+      [
+        "energy"
+      ],
+      [
+        "agents, erosion, carry, rock"
+      ],
+      [
+        "Lichens, symbiotic, green, algae, fungi., green, algae, supply, fungi, relationship?"
+      ],
+      [
+        "Heat, Earth's, interior, transferred, crust"
+      ],
+      [
+        "measurements, volume"
+      ],
+      [
+        "influence, change, motion"
+      ],
+      [
+        "measure, quantity, rainfall, tool"
+      ],
+      [
+        "ship, foods, world"
+      ],
+      [
+        "sunrise, occur, east, coast, hours, west, coast"
+      ],
+      [
+        "hurricanes, tornadoes, always"
+      ],
+      [
+        "resource, make, gasoline?"
+      ],
+      [
+        "food, mold"
+      ],
+      [
+        "appearance, constellation, change, night?"
+      ],
+      [
+        "heat, car, engine, friction, parts., reduces, amount, heat, friction?"
+      ],
+      [
+        "Spiders, eight, legs, eight, eyes., traits, help, survive?"
+      ],
+      [
+        "Seeds, inactive, right, conditions, called"
+      ],
+      [
+        "species, able"
+      ],
+      [
+        "picture, arrangements, atoms, molecules, instruments"
+      ],
+      [
+        "LONGEST, time, observe?"
+      ],
+      [
+        "computer, changes, electrical, energy, light, energy, sound, energy., energy"
+      ],
+      [
+        "Harp, seals, adapted, cold, survive, winters?"
+      ],
+      [
+        "ocean, releases, lava, ocean, floor"
+      ],
+      [
+        "characteristic, human, inherit?"
+      ],
+      [
+        "diagram, energy, transfers, begins, Sun, results, breeze?"
+      ],
+      [
+        "phases, matter"
+      ],
+      [
+        "testing, exercise, heart, rate., procedure, correctly, compare, results"
+      ],
+      [
+        "motion, object, described"
+      ],
+      [
+        "Thorns, help, plants"
+      ],
+      [
+        "organisms, produces, energy, sunlight?"
+      ],
+      [
+        "pencil, falls, moves, pencil, toward, floor?"
+      ],
+      [
+        "structures, form, nervous, system?"
+      ],
+      [
+        "weather, breaks, solid, structure"
+      ],
+      [
+        "rock, imprints, shells., conclude, area?"
+      ],
+      [
+        "Organisms, consume, wastes, nutrients"
+      ],
+      [
+        "Deer, protect, deer, cars, road?"
+      ],
+      [
+        "describes, feather, feels?"
+      ],
+      [
+        "water, vapor, condenses, clouds, warm, formed?"
+      ],
+      [
+        "feature, parallel, circuit?"
+      ],
+      [
+        "rolls, ball, causes, slow, stop?"
+      ],
+      [
+        "water, jar, weekend., jar, empty"
+      ],
+      [
+        "8, degrees., activity, suit, temperature"
+      ],
+      [
+        "hot, ice-cold, water, bottle, car, thirty, minutes., water, surrounding, outside, bottle."
+      ],
+      [
+        "dogs, characteristics, parents?"
+      ],
+      [
+        "stream, water, rocks, interact?"
+      ],
+      [
+        "carnivorous, animals, share, habitat, ecosystem"
+      ],
+      [
+        "process, plants, animals, increase, size."
+      ],
+      [
+        "organism, survive, environment, changing?"
+      ],
+      [
+        "cigarettes, alcohol, harmful, organs?"
+      ],
+      [
+        "measuring"
+      ],
+      [
+        "liquids, bubbles., answered, using, ruler?"
+      ],
+      [
+        "Malaria, cause"
+      ],
+      [
+        "Earth, one, revolution, around, sun?"
+      ],
+      [
+        "measurement, mass, object?"
+      ],
+      [
+        "Animals, act, aggressively, behaviors, result"
+      ],
+      [
+        "bulb, giving, light, example"
+      ],
+      [
+        "purpose, chromosomes, nucleus, cell?"
+      ],
+      [
+        "magnet, south, pole, magnet, hangs"
+      ],
+      [
+        "describes, role, tree, ecosystem?"
+      ],
+      [
+        "objects, greatest, mass?"
+      ],
+      [
+        "precipitation, solid, form."
+      ],
+      [
+        "iron, nail, wrapped, copper, wire"
+      ],
+      [
+        "reflects, light?"
+      ],
+      [
+        "plants, light., helping, plants, light?"
+      ],
+      [
+        "responsible, changes, seasons"
+      ],
+      [
+        "jump, come, back, ground., due"
+      ],
+      [
+        "seeds, oak"
+      ],
+      [
+        "first, source, matter, food, chain."
+      ],
+      [
+        "large, toy, bigger, splash, likely, happen, larger, brother, jump, pool?"
+      ],
+      [
+        "waste, excreted, lungs?"
+      ],
+      [
+        "hail"
+      ],
+      [
+        "organisms, convert, solar, energy, raw, materials, food"
+      ],
+      [
+        "important, repeat, experiment"
+      ],
+      [
+        "iron, filings, wire., attracts, iron, filings., infer?"
+      ],
+      [
+        "Sun, Moon, appear, size"
+      ],
+      [
+        "instrument, measure, air, pressure."
+      ],
+      [
+        "rock, increase, potential, energy"
+      ],
+      [
+        "properties, magnesium, oxide, different, individual, properties, magnesium, oxygen, magnesium, oxide"
+      ],
+      [
+        "animal, cells, change, color, color, change, help, animal"
+      ],
+      [
+        "explanation, car, rolls, farther, wood, floor, thick, carpet?"
+      ],
+      [
+        "onion, little, box-like, shapes, likely"
+      ],
+      [
+        "results, experiment, support, hypothesis?"
+      ],
+      [
+        "car, skids, smoke, appears, tires., heat, caused"
+      ],
+      [
+        "organisms, significant, trait, changes, shortest, period, time?"
+      ],
+      [
+        "made, one, material?"
+      ],
+      [
+        "movement, fault., tool, measurement?"
+      ],
+      [
+        "example, good, health, habit?"
+      ],
+      [
+        "physical, properties, iron, nail?"
+      ],
+      [
+        "amount, water, fill, aquarium, three, fish?"
+      ],
+      [
+        "method, measuring, volume, liquid, cap?"
+      ],
+      [
+        "lizard, protected, enemies, characteristic?"
+      ],
+      [
+        "dogs, long, hair, run, faster, short, answer"
+      ],
+      [
+        "producer, food., producer, caterpillar, use?"
+      ],
+      [
+        "causes, nighttime, daytime, Earth?"
+      ],
+      [
+        "human, body, system, skeletal, system, bones, create, movement?"
+      ],
+      [
+        "water, cycle, water, clouds, falls, Earth?"
+      ],
+      [
+        "temperature, water, rises, 0\u00b0F, changes"
+      ],
+      [
+        "function, trees, danger, deforestation"
+      ],
+      [
+        "chemical, reaction, play, transfers, chemical, energy"
+      ],
+      [
+        "pencil, edge, desk"
+      ],
+      [
+        "arctic, polar, permafrost, snowy, owl, together, ecosystem?"
+      ],
+      [
+        "instrument, measure, volume, liquid?"
+      ],
+      [
+        "rose, thorns, avoid, eaten."
+      ],
+      [
+        "living, component, California's, desert?"
+      ],
+      [
+        "Decomposers, eat, energy."
+      ],
+      [
+        "causes, earthquakes"
+      ],
+      [
+        "photosynthesis., gas, tree, release?"
+      ],
+      [
+        "Water, freezing"
+      ],
+      [
+        "children, resemble, parents?"
+      ],
+      [
+        "model, size, moon, compares, Earth., orange, represent, moon., represent, Earth?"
+      ],
+      [
+        "instrument, measure, 10, milliliters, water?"
+      ],
+      [
+        "light, bulb, lit, battery"
+      ],
+      [
+        "main, function, heart"
+      ],
+      [
+        "seeds., seeds, fire., adult, trees, available, growing, seeds?"
+      ],
+      [
+        "made, atoms?"
+      ],
+      [
+        "mixture, weathered, rock, organic, matter?"
+      ],
+      [
+        "flower, seeds, grow, process"
+      ],
+      [
+        "puddles, water, playground, dry, afternoon?"
+      ],
+      [
+        "graduated, cylinder, measure, space, substance."
+      ],
+      [
+        "separate, iron, shavings, salt., tool"
+      ],
+      [
+        "Cell, organs, organ, systems, organisms"
+      ],
+      [
+        "tool, measure, growth, plant's, stem?"
+      ],
+      [
+        "repeating, experiment, improve, accurate, results?"
+      ],
+      [
+        "separate, mixture, salt, pepper?"
+      ],
+      [
+        "determines, twins, identical?"
+      ],
+      [
+        "soil, erode, river, bank, days?"
+      ],
+      [
+        "Bats, prey, senses, detect, echoes., bat, send, find, prey?"
+      ],
+      [
+        "investigation, types, bacteria, grow, activity, avoid"
+      ],
+      [
+        "activities, living"
+      ],
+      [
+        "relationship, Earth's, layers?"
+      ],
+      [
+        "animals"
+      ],
+      [
+        "poor, health, habit"
+      ],
+      [
+        "problem, wind, turbines, energy?"
+      ],
+      [
+        "deer, eat, plants, forest, happen, plants, deer, left"
+      ],
+      [
+        "butterfly, eggs, young, called"
+      ],
+      [
+        "competition, occur?"
+      ],
+      [
+        "water, vapor, upper"
+      ],
+      [
+        "Taking, nests, birds, increases, starlings"
+      ],
+      [
+        "species, unable, adapt, effects"
+      ],
+      [
+        "producers, make, food?"
+      ],
+      [
+        "animals, carry, seeds, berries, another, area?"
+      ],
+      [
+        "Toads, eggs, ponds., Tadpoles, hatch, eat, plants, floating, resource, important, survive?"
+      ],
+      [
+        "Coal, produce"
+      ],
+      [
+        "example, liquid, water?"
+      ],
+      [
+        "Earth's, orbit, Sun?"
+      ],
+      [
+        "desk, fit, help, make, sure, desk, fit?"
+      ],
+      [
+        "needle, compass, point"
+      ],
+      [
+        "arrow, compass, always, points"
+      ],
+      [
+        "happen, igneous, rock, eroded, deposited, lake?"
+      ],
+      [
+        "water, pond, colder, night., tool, observe, temperature"
+      ],
+      [
+        "life, cycle, moth?"
+      ],
+      [
+        "event, cause, rock, become, soil"
+      ],
+      [
+        "lawn, plants, compete"
+      ],
+      [
+        "mineral, nonmetallic, luster, black., scratched, fingernail., mineral, reference"
+      ],
+      [
+        "purple, dye, sea, animals., make, medicine., purple, dye, coal., positive, effect"
+      ],
+      [
+        "example, life, cycle, plant?"
+      ],
+      [
+        "fossil, fuels, found?"
+      ],
+      [
+        "block, wooden, ramp., block., block, slows, stop., force"
+      ],
+      [
+        "describes, unicellular, organisms?"
+      ],
+      [
+        "forest, desert., factor, explains, plants, survive"
+      ],
+      [
+        "conserve, energy"
+      ],
+      [
+        "Earth's, water, located?"
+      ],
+      [
+        "energy, found, food?"
+      ],
+      [
+        "organisms, evolution, rapidly?"
+      ],
+      [
+        "change, water, liquid, solid?"
+      ],
+      [
+        "time, Moon, complete, cycle, viewed, Earth"
+      ],
+      [
+        "energy, pedal, bicycle?"
+      ],
+      [
+        "characteristic, dog, result, environment?"
+      ],
+      [
+        "purpose, experiment?"
+      ],
+      [
+        "Reproduction, animals, produce"
+      ],
+      [
+        "environment, warmer, change, species, adapt"
+      ],
+      [
+        "measure, length, shadows, 10:00, 2:45, PM., use"
+      ],
+      [
+        "air, sealed, pushed, happened, air, inside"
+      ],
+      [
+        "animal, sharp, teeth"
+      ],
+      [
+        "animals, heat, cold, weather?"
+      ],
+      [
+        "order, development, plants?"
+      ],
+      [
+        "property, mineral., rubbed, mineral, sample, tile., red, mark, physical, properties, testing?"
+      ],
+      [
+        "describing, climate?"
+      ],
+      [
+        "characteristic, inherited"
+      ],
+      [
+        "salt, peanuts, stirs, made?"
+      ],
+      [
+        "characteristic, made, metal?"
+      ],
+      [
+        "Extinction, occur, result"
+      ],
+      [
+        "sand, water, separated"
+      ],
+      [
+        "large, rocks, become, smaller, rock?"
+      ],
+      [
+        "use, tape, measure, building, doghouse?"
+      ],
+      [
+        "investigation, results, match, hypothesis., next?"
+      ],
+      [
+        "event, daily, cycle?"
+      ],
+      [
+        "renewable, energy, sources?"
+      ],
+      [
+        "human, activities, negatively, affects, natural, resource?"
+      ],
+      [
+        "wooden, block, sandpaper., increases?"
+      ],
+      [
+        "sea, turtles, migrate, reproduce., migration, example"
+      ],
+      [
+        "Time, based"
+      ],
+      [
+        "elements, similar, properties?"
+      ],
+      [
+        "characteristic, single-celled, multicellular, organisms, common?"
+      ],
+      [
+        "help, discover, new, planet?"
+      ],
+      [
+        "food, oxygen, true?"
+      ],
+      [
+        "eats, butterflies., explains, behavior, bird?"
+      ],
+      [
+        "contains, solution?"
+      ],
+      [
+        "texture"
+      ],
+      [
+        "example, kinetic, energy?"
+      ],
+      [
+        "plants, make"
+      ],
+      [
+        "physical, weathering?"
+      ],
+      [
+        "protects, eyes?"
+      ],
+      [
+        "separate, steel, paperclips, plastic, paperclips"
+      ],
+      [
+        "population, small, fish, large, fish, will"
+      ],
+      [
+        "organisms, compete, resources, considered"
+      ],
+      [
+        "Matter, vibrating, producing"
+      ],
+      [
+        "Earth's, rotation, axis, causes"
+      ],
+      [
+        "measuring, boiling, point, salt, water, mixture., results, valid?"
+      ],
+      [
+        "represents, velocity, moving, object?"
+      ],
+      [
+        "temperature, water, boil?"
+      ],
+      [
+        "system, processes, foods, energy?"
+      ],
+      [
+        "activities, new, substance, formed?"
+      ],
+      [
+        "animal, preparing, seasonal, change"
+      ],
+      [
+        "mixtures, easiest, separate?"
+      ],
+      [
+        "dark, room, window., plant, near, window, grows, faster"
+      ],
+      [
+        "muscle, pumps, blood"
+      ],
+      [
+        "eagle, eggs, dry, nest., animal, lays, eggs, similar, eagle?"
+      ],
+      [
+        "needed, butterfly's, life, cycle?"
+      ],
+      [
+        "magnets, repel"
+      ],
+      [
+        "maple, trees., property, measure, meter, stick?"
+      ],
+      [
+        "adaptation?"
+      ],
+      [
+        "groups, includes, others?"
+      ],
+      [
+        "Humans, require, energy"
+      ],
+      [
+        "magnet, separate, particles, sand., dark, particles, made, element?"
+      ],
+      [
+        "four, stages, life, cycle, butterfly:, caterpillar., occurs"
+      ],
+      [
+        "system, absorbs, carries, food, digestive, system, body?"
+      ],
+      [
+        "example, weathering?"
+      ],
+      [
+        "Sleet, hail"
+      ],
+      [
+        "insect's, life, cycle, lay, eggs?"
+      ],
+      [
+        "glacier, ice., left, ice, melt?"
+      ],
+      [
+        "decrease, polar, bear, population, arctic?"
+      ],
+      [
+        "Humans, depend, natural, resource"
+      ],
+      [
+        "physical, property, copper?"
+      ],
+      [
+        "adaptation, animal, attract, mate?"
+      ],
+      [
+        "beach, two, summers, row., sand, dunes, summer, gone, beach, sand, dunes, caused, change?"
+      ],
+      [
+        "example, evaporation?"
+      ],
+      [
+        "wax, candle, reached"
+      ],
+      [
+        "trees, bare, hillside., reason, planting, trees?"
+      ],
+      [
+        "Sun, appear, Pluto, compared, Earth?"
+      ],
+      [
+        "graduated, cylinder, measuring"
+      ],
+      [
+        "Water, helps, things, survive"
+      ],
+      [
+        "lab, tests, water, help, people?"
+      ],
+      [
+        "temperature, changed, 41\u00b0F, 28\u00b0F., changes, precipitation"
+      ],
+      [
+        "interrelationships, living, things, ecosystem"
+      ],
+      [
+        "Earth, complete, orbit, Sun?"
+      ],
+      [
+        "brushing, teeth:, change, directions, conserve"
+      ],
+      [
+        "tool, determine, long, warm, water, melt, ice, cube?"
+      ],
+      [
+        "causes, day, night"
+      ],
+      [
+        "forms, energy, increase, temperature, copper?"
+      ],
+      [
+        "process, causes, reduction, beach, sand?"
+      ],
+      [
+        "strawberry, plant, absorbs, water, plant?"
+      ],
+      [
+        "job., microscopes, help, scientists?"
+      ],
+      [
+        "function, chloroplasts"
+      ],
+      [
+        "light, bulb, benefit, light, bulbs?"
+      ],
+      [
+        "humans, maintain, good, health?"
+      ],
+      [
+        "carries, sound, bell"
+      ],
+      [
+        "cause, Earth, solar, year?"
+      ],
+      [
+        "Coral, classified, animal"
+      ],
+      [
+        "safety, goggles, laboratory"
+      ],
+      [
+        "chicken, laying, egg"
+      ],
+      [
+        "theorize, humans, caused, air, pollution., data, correct"
+      ],
+      [
+        "safety, rule, working, acids, bases?"
+      ],
+      [
+        "seeds, oak"
+      ],
+      [
+        "energy, Sun, power, solar, energy, converted"
+      ],
+      [
+        "property, water, changed, water, froze?"
+      ],
+      [
+        "Sugar, dissolved, water., windowsill., sugar, happened, water?"
+      ],
+      [
+        "roller-skate, race., surface, best"
+      ],
+      [
+        "cycle, stage, larval, stage?"
+      ],
+      [
+        "human, action, ocean, recover"
+      ],
+      [
+        "cells, need"
+      ],
+      [
+        "air, temperature, time, day., way, measuring, temperature, accurate, data?"
+      ],
+      [
+        "organ, removes, waste, blood?"
+      ],
+      [
+        "Plants, structures, contain, chlorophyll"
+      ],
+      [
+        "sediments, pressed"
+      ],
+      [
+        "bird, feet., feathers, helpful"
+      ],
+      [
+        "sense, determine, ability, reflect, light?"
+      ],
+      [
+        "landforms, hills, taller?"
+      ],
+      [
+        "characteristic, one, taxonomic, groups:, fishes?"
+      ],
+      [
+        "main, directions, compass?"
+      ],
+      [
+        "police, fingerprints, criminals"
+      ],
+      [
+        "three, boxes, cereal, contain, 400, g, check"
+      ],
+      [
+        "Earthworms, tunnels., Plants, better, earthworm, tunnels, help, plants?"
+      ],
+      [
+        "Earth's, appearance, process, moving, sediment"
+      ],
+      [
+        "characteristic, inherited?"
+      ],
+      [
+        "electric, plug, metal, prongs., prongs, made, metal?"
+      ],
+      [
+        "conducting, wire, wrapped, plastic, protects, user"
+      ],
+      [
+        "advantage, sexual, reproduction, asexual"
+      ],
+      [
+        "dead, reuse, process, releases"
+      ],
+      [
+        "plant, part, similar, bird's, egg?"
+      ],
+      [
+        "wood, metal, cold, temperatures, measured, themometer., metal, decreases, faster, block, of, wood."
+      ],
+      [
+        "form, precipitation?"
+      ],
+      [
+        "process, water, cycle, snow, fall"
+      ],
+      [
+        "decomposer, organism"
+      ],
+      [
+        "responsible, formation, sand, dunes, Lake, Michigan's, shoreline?"
+      ],
+      [
+        "Compared, hereditary, information, human, body, hereditary, information, human, sex, cell?"
+      ],
+      [
+        "describe, water, falls, sky"
+      ],
+      [
+        "compass, energy?"
+      ],
+      [
+        "differences, unicellular, multicellular, model, unicellular, organism?"
+      ],
+      [
+        "invasive, species, harmful, ecosystem?"
+      ],
+      [
+        "75, partly, cloudy, air, pressure, temperature, drop, weather"
+      ],
+      [
+        "nonliving, factors, ecosystem, except"
+      ],
+      [
+        "simple, machine, open, box?"
+      ],
+      [
+        "produces, energy, heat?"
+      ],
+      [
+        "coal, sun, energy?"
+      ],
+      [
+        "function, hormones, body"
+      ],
+      [
+        "Safe, practices, laboratory"
+      ],
+      [
+        "tool, observing, birds?"
+      ],
+      [
+        "safer, look, Moon, Sun?"
+      ],
+      [
+        "describes, theory, natural, selection?"
+      ],
+      [
+        "first, step, design, process?"
+      ],
+      [
+        "recycling, center, separate, steel, aluminum"
+      ],
+      [
+        "Runoff, contribute, polluting"
+      ],
+      [
+        "desert, animals, sun, night., animal, active, night"
+      ],
+      [
+        "simple, machine, opens, twist, top, bottle"
+      ],
+      [
+        "Darwin's, theory, species, time, inspired, research, islands?"
+      ],
+      [
+        "changes, business, become, \"environmentally, friendly\"??"
+      ],
+      [
+        "bicycle, moves, faster, smooth, road, rough"
+      ],
+      [
+        "Cancer, described"
+      ],
+      [
+        "sedimentary, rock, transform, metamorphic"
+      ],
+      [
+        "season, fur, thickest?"
+      ],
+      [
+        "Electrical, energy, changed, heat"
+      ],
+      [
+        "pedigree, chart, shows, except"
+      ],
+      [
+        "stage, life, cycle, butterfly, eating, plant, leaves?"
+      ],
+      [
+        "change, occur, wire, electrical, circuit, working, properly?"
+      ],
+      [
+        "takes, one, year, complete?"
+      ],
+      [
+        "offspring, genes?"
+      ],
+      [
+        "oil, available, affect, human, choice?"
+      ],
+      [
+        "characteristic, common, animals, cold, climate?"
+      ],
+      [
+        "characteristics, dog, inherit, parents?"
+      ],
+      [
+        "bones, determine, age, dinosaur, bones?"
+      ],
+      [
+        "ducklings, follow, mother, swimming"
+      ],
+      [
+        "Moon, visible, Earth"
+      ],
+      [
+        "force, compass, needle, point, North?"
+      ],
+      [
+        "fast, replaced., activity, use, nonrenewable, natural, resource?"
+      ],
+      [
+        "example, predator, prey"
+      ],
+      [
+        "Living, things, need, survive?"
+      ],
+      [
+        "Competition, organisms?"
+      ],
+      [
+        "Properties, rocks, include, crystals, minerals."
+      ],
+      [
+        "activity, maintain, health?"
+      ],
+      [
+        "electric, company, electricity., phone, call, example, universal, systems, model?"
+      ],
+      [
+        "reason, study, weather?"
+      ],
+      [
+        "goldfish, taking, in?"
+      ],
+      [
+        "fold, property, changed?"
+      ],
+      [
+        "sick, flu, dance., explain, got, sick?"
+      ],
+      [
+        "estimate, weight, nickel?"
+      ],
+      [
+        "vegetables, bad., environmentally, responsible, thing, rotten, food?"
+      ],
+      [
+        "Earth, Moon, common, features, except"
+      ],
+      [
+        "specific, characteristic, ivy, plant"
+      ],
+      [
+        "water, turns"
+      ],
+      [
+        "prevent, species, humans"
+      ],
+      [
+        "decomposer, organism"
+      ],
+      [
+        "Northern, Hemisphere, snow, December., Southern, Hemisphere, beach, December."
+      ],
+      [
+        "environments, BEST, amphibian?"
+      ],
+      [
+        "reproduction"
+      ],
+      [
+        "measure, temperature, snowstorm., tool"
+      ],
+      [
+        "example, decomposer?"
+      ],
+      [
+        "oil, placed, water?"
+      ],
+      [
+        "fish, fossils, desert., environment, alive?"
+      ],
+      [
+        "air, resistance, equal, gravity., forces, equal"
+      ],
+      [
+        "part, woolly, mammoth, least, likely, fossil?"
+      ],
+      [
+        "magnet, attract?"
+      ],
+      [
+        "rocks, composed"
+      ],
+      [
+        "function, circulatory, system?"
+      ],
+      [
+        "examples, animals, found, type, ecosystem?"
+      ],
+      [
+        "classified, producers?"
+      ],
+      [
+        "turtles, prey, important, ability, turtles, better, survival, offspring?"
+      ],
+      [
+        "Rocks, classified, sedimentary"
+      ],
+      [
+        "student, conducts, investigation., make, valid"
+      ],
+      [
+        "ability, sand, conduct, electricity., reasonable, entry, scientific, journals"
+      ],
+      [
+        "allows, organism, survive, new, environments?"
+      ]
+    ]
+  },
+  "subtask045_miscellaneous_sentence_paraphrasing": {
+    "pred": [
+      "Bacteria is the organism responsible for causing Lyme disease.",
+      "The entirety of the petals is referred to as the corolla.",
+      "An individual with an excess of chromosome sets is referred to as a polyploid.",
+      "The vertebral column is also known as the backbone.",
+      "The process of liquid water transforming into water vapor is known as evaporation.",
+      "Each species has a specific way of surviving, which is referred to as its niche.",
+      "The term \"ectothermic\" describes reptiles, indicating that their internal temperature relies on the temperature of their surroundings.",
+      "Most of the universe is composed of plasma, a unique state of matter.",
+      "A community is formed by all the populations living in the same area, including populations of different organisms.",
+      "The acidification of the ocean happens as a result of an excess of carbon dioxide in the atmosphere, leading to the oceans becoming acidic.",
+      "A concave lens is more substantial at its periphery than at its center.",
+      "During hemodialysis, a patient's blood is circulated through a length of tubing within an artificial kidney machine.",
+      "A substance is considered a base if its pH value is higher than 7.",
+      "The boundary between two air masses in weather terminology is referred to as a front.",
+      "Carbon is a component found in all organic compounds.",
+      "Mitosis occurs in a total of four phases.",
+      "The majority of the energy utilized by living organisms originates either directly or indirectly from the sun.",
+      "Light can enter the eye through the pupil.",
+      "A second messenger is exemplified by the calcium ion.",
+      "Cardiac output is the amount of blood pumped by the heart in one minute, calculated by multiplying heart contractions by stroke volume.",
+      "All varieties of cells are surrounded by a membrane.",
+      "To protect themselves.",
+      "Sandy soils facilitate rapid drainage of water.",
+      "Gamma rays are produced by radioactive atoms, nuclear explosions, and stars.",
+      "Birds perform incubation to keep their eggs warm while the embryos inside develop.",
+      "Microevolution refers to the small changes that occur in a species over time.",
+      "A person utilizes mechanical energy to operate a bicycle by pedaling.",
+      "A mineral is a naturally occurring solid material with a definite chemical composition and a highly ordered atomic structure.",
+      "Moons, planets, and comets are the only sets of objects that shine due to reflected light.",
+      "The complexity of the life cycle of plants arises from the alternation of generation.",
+      "Certain animals typically migrate due to alterations in the seasons and a decrease in available food.",
+      "The nucleus is contained within the head of the sperm.",
+      "A baby is referred to as an infant during the first year after birth.",
+      "The flow of air in the lungs is controlled by smooth muscle.",
+      "The photic zone reaches a depth of 200 meters.",
+      "Nematodes have the ability to parasitize both plants and animals.",
+      "When mammals use tiny muscles in the skin to raise their hair, goosebumps occur.",
+      "Many species of birds in New England fly south for the winter months in order to seek a habitat with greater food availability.",
+      "In one day, the Earth completes one rotation on its axis.",
+      "In a food chain, a consumer and producer are involved when a deer consumes a leaf.",
+      "The Earth's outer layer, known as the lithosphere, is a thin layer of rock that covers the planet's surface.",
+      "The dna from all 46 chromosomes in a human cell nucleus, if laid out end to end, would measure approximately a length of two meters.",
+      "Coal and the sun differ in terms of their renewability as sources of energy.",
+      "The skeletal system consists of bones, cartilage, and ligaments.",
+      "Binary fission, a process found in prokaryotic organisms, results in the production of identical offspring through cell division.",
+      "Plants are relied upon by numerous animals for protection.",
+      "The best way to protect a tree from being toppled by strong winds during a storm is by having an extensive root system.",
+      "Mercury always maintains a closer proximity to the Sun than it does to Earth.",
+      "Engaging in consistent physical activity is a beneficial health practice.",
+      "The behavior of animals can be considered to be influenced by genetics and life experiences, commonly referred to as nature and nurture.",
+      "The sun is categorized as a star.",
+      "Jet streams are high-altitude, fast-moving air currents that flow in opposite directions.",
+      "The process of gametogenesis, which is the production of sperm and eggs, involves meiosis.",
+      "The hand is composed of carpal, metacarpal, and phalanx bones.",
+      "A human offspring can inherit the characteristic of having blue eyes.",
+      "Newton\u2019s second law of motion involves more than just a definition; it represents a connection between acceleration, force, and mass.",
+      "The gallbladder is in close proximity to the liver's right lobe.",
+      "A molecule of water is composed of two hydrogen atoms and one oxygen atom combining together.",
+      "The ability of an object to bend is facilitated by its flexibility.",
+      "A symbiotic relationship exists when a certain type of tree\u2019s roots require a fungus to be present in order to grow normally.",
+      "Carbon (C) is crucial for living organisms due to its ability to form various bonds with itself, creating chains.",
+      "The life cycle of certain insects is demonstrated by the sequence egg -> larva -> pupa -> adult.",
+      "The most energetic water molecules evaporating from a surface have the effect of cooling it.",
+      "The majority of the body's regulatory hormones are produced by the endocrine system.",
+      "The analysis of simple Mendelian inheritance utilizes a pedigree.",
+      "Rain is an example of water in its liquid form.",
+      "The Earth takes approximately a year to complete its orbit around the Sun.",
+      "The velocity of sound is contingent upon the medium through which it travels.",
+      "In all chemical reactions, there are both reactants and substances formed as a result, known as products.",
+      "A narrow wire will possess a greater amount of resistance in comparison to a wide wire in relation to electrical current.",
+      "Metabolism is the term used to describe the total chemical reactions occurring within an organism.",
+      "The cardiovascular system functions to distribute gases throughout the body.",
+      "The immune system usually identifies, combats, and eliminates foreign cells or substances that could potentially cause illness.",
+      "Both gravity and magnetism are forces that are widely observed in nature.",
+      "A convex mirror has a shape similar to the outer surface of a bowl.",
+      "The frontal lobe of the brain is where the primary motor cortex is situated.",
+      "The characteristic shared by all cells is their requirement for energy.",
+      "The orbits of the planets around the Sun are a result of the force of gravity.",
+      "Decomposers play a crucial role in an ecosystem by recycling matter through the return of carbon and other substances to the ecosystem.",
+      "The force of attraction between two magnets will decrease as the distance between them increases.",
+      "The ship will remain buoyant if the buoyant force exceeds the force of gravity acting on it.",
+      "The solid state of water is exemplified by ice cubes.",
+      "Birds inhabit and reproduce on seven of the continents.",
+      "Turning off the water while brushing teeth would aid in water conservation.",
+      "A microscope is the best tool for observing the components of a plant cell.",
+      "The proper sequence of food moving through the digestive system after it is swallowed consists of: esophagus, stomach, small bowel, large bowel.",
+      "Decomposing deceased organisms is the source of energy for mushrooms.",
+      "Burning paper produces thermal energy.",
+      "Both plants and humans undergo the processes of growth and reproduction.",
+      "Watering plants and grass in the early morning helps conserve water due to reduced evaporation in the cooler temperatures.",
+      "The structures that form the digestive system in the human body include the esophagus, stomach, and intestines.",
+      "Seeds that stay inert until the appropriate circumstances of illumination, moisture, and ground are available are referred to as dormant.",
+      "It takes Earth about a year to make a complete revolution around the Sun.",
+      "The bird predecessor that resided in trees evolved the characteristic often linked with birds, wings.",
+      "An organ is a formation that consists of one or more varieties of tissues.",
+      "Hydrogen is the most prevalent element in the entire universe.",
+      "For a person to be impacted by an autosomal dominant disorder, they require one altered allele.",
+      "The term \"micronutrients\" refers to the minerals and vitamins that are essential for good health but are not required for providing the body with energy.",
+      "Sometimes, a bee will perform a dance to communicate to other bees in the hive the location of food sources.",
+      "The Sun appears brighter than any other star from Earth because it is the star nearest to us.",
+      "Molecular biologists often use a viral vector to insert genetic material into cells, which is the name for a tool commonly employed for this purpose.",
+      "Materials that can transmit electricity with 100% efficiency, ensuring no energy loss during electrical transmission, are referred to as superconductors.",
+      "The primary process through which heat energy from the Sun is transferred to Earth is radiation.",
+      "The force of attraction between a positively charged metal ion and the valence electrons it shares with other ions of the metal is referred to as a metallic bond.",
+      "The endocrine system secretes hormones to control growth, development, and reproduction.",
+      "DNA is the substance of which genes are composed.",
+      "Invertebrates (and higher animals) can also be categorized into two groups depending on their embryonic development.",
+      "During the summer near the Arctic Circle, the length of daylight hours each day reaches its maximum.",
+      "Metals and nonmetals are the two main categories into which elements on the periodic table of the elements are sorted.",
+      "The plant cell contains a structure known as the cell wall, which is absent in animal cells.",
+      "Venus possesses a higher average surface temperature than Earth.",
+      "Animals classified as Vertebrata are distinguished by the existence of a backbone.",
+      "In type one, diabetes is unavoidable, but in the second type, it can be prevented through dietary measures.",
+      "During the basic nuclear fission process, an atom of u-235 is collided by a neutron.",
+      "The SI unit for weight is the newton (N).",
+      "Molecules consisting of one carbon and four hydrogen atoms are known as hydrocarbons.",
+      "Moss is most appropriately categorized as a nonvascular plant.",
+      "Ore is the initial form of metals.",
+      "Brown eyes can be passed down to children from their parents through inheritance.",
+      "Cancer can develop as a consequence of abnormal cell division.",
+      "The study of how forces impact the movement of objects is known as dynamics.",
+      "A process known as fluorescence causes some substances, like minerals, to emit light in characteristic visible wavelengths when they are exposed to ultraviolet.",
+      "A complex machine can be best described as being composed of multiple simple machines.",
+      "The water cycle concludes by repeating itself.",
+      "A parallel circuit is when electricity has the option to flow through multiple pathways.",
+      "At the heart of our solar system lies the sun.",
+      "The synapse is the gap between a neuron and the adjacent cell.",
+      "Horizontal layers are formed when sediments settle out of water.",
+      "The process of fission is utilized in nuclear power plants and is also a type of nuclear bomb.",
+      "A prism assists individuals in comprehending the components of white light.",
+      "In the fall, many plants respond to the days growing shorter by entering a dormant state.",
+      "Carbon is the element found in compounds that form the basis of all known life.",
+      "A simple harmonic oscillator is a basic form of what kind of device, where an object is connected to a spring and moves on a surface without friction?",
+      "Genetic inheritance can be traced using the pedigree chart model.",
+      "Energy is the common factor among heat, light, and sound, as they all represent distinct forms of energy.",
+      "Climatic factors and the types of primary producers are used to categorize terrestrial biomes.",
+      "The primary energy source for most organisms in food chains is sunlight.",
+      "The presence of a smaller number of predators is the factor most likely to cause the population of rabbits in an area to grow.",
+      "A negative feedback loop involving the hypothalamus and pituitary gland controls the thyroid gland.",
+      "The process of wood combustion is an example of a different substance being created.",
+      "Chemical digestion primarily occurs in the small intestine within the body.",
+      "Most species of plants and animals that have lived on Earth have faced extinction primarily due to changes in the environment.",
+      "The process of photosynthesis takes place within the chloroplast of a plant cell.",
+      "The theory of gases known as kinetic molecular theory explains the behavior of ideal gases.",
+      "An adaptation is a favorable characteristic.",
+      "Biomass, such as wood and agricultural waste, is an example of a renewable energy resource.",
+      "The levels of organization of body structures in a human from simplest to most complex are identified by the sequence cell \u2192 tissue \u2192 organ \u2192 organ system.",
+      "The most successful group of plants are angiosperms.",
+      "The endocrine system is responsible for producing the majority of hormones in the human body.",
+      "Plants release oxygen gas.",
+      "Lowering the temperature is a method to transform water from a liquid to a solid.",
+      "The region around the equator receives the most direct sunlight on Earth.",
+      "The artery responsible for transporting blood to the brain is the carotid artery.",
+      "The survival of a moose relies on consuming plants.",
+      "Some animals use a pungent smell to protect themselves from predators.",
+      "The substance known as water is composed of three atoms.",
+      "Only solids have a definite shape and a definite volume as properties.",
+      "Protecting soil is crucial due to its role in providing essential nutrients for plant growth.",
+      "Heat transfer by conduction occurs when molecules come into contact and interact with other molecules.",
+      "Solids are formed when gases and liquids are exposed to low temperatures.",
+      "Cellular drinking is also referred to as pinocytosis.",
+      "As a frog undergoes the transformation from a tadpole to an adult frog, it develops respiratory organs known as lungs.",
+      "An air mass is characterized by consistent temperature and moisture properties throughout its expanse.",
+      "Water that flows out of the ground where an aquifer meets the surface is referred to as a spring.",
+      "Neptune is the planet that is eighth in order from our sun.",
+      "The respiratory system in the fetus starts to develop around the fourth week.",
+      "Beneficial fungi are essential for maintaining the equilibrium of ecosystems.",
+      "A low-pressure weather system will probably lead to overcast skies.",
+      "The rotation of the driveshaft leads to the turning of the car's wheels.",
+      "The texture of a kitten's fur is described as being soft.",
+      "The analysis of seismic waves has assisted scientists in ascertaining the composition of the Earth's interior.",
+      "Gabbro, a dense and dark rock, is commonly located within the oceanic crust.",
+      "The Law of Superposition is most accurately explained as follows: within undisturbed sedimentary rock layers, the lower layers consist of the older rocks.",
+      "The force of gravity is responsible for causing rocks to roll downhill.",
+      "All living organisms share the common processes of utilizing nutrients and undergoing growth.",
+      "The unit used to quantify the energy in food is a calorie.",
+      "The primary cause of the changes in the atmosphere's composition over the past 200 years has been human activity.",
+      "Coal is one of the resources that can be extracted from the Earth and utilized as an energy source.",
+      "Most of the Earth's atmosphere consists of oxygen and nitrogen.",
+      "Opposite-headed arrows indicate reversible reactions.",
+      "Plastic or rubber covering is typically used on electrical wires to provide insulation.",
+      "The function of muscle cells relies on microfilaments, which are the actin components of the cytoskeleton.",
+      "All of the oxygen in the air has been produced by plants and other photosynthetic organisms on a global scale.",
+      "Metals typically exhibit superior conductivity and higher melting points compared to nonmetals.",
+      "Water is an example of a substance that is considered matter.",
+      "The process of evaporation is responsible for transforming liquid water into water vapor.",
+      "The storage of energy in a chemical substance occurs between individual atoms.",
+      "A network of tubes is the most effective way to describe how stems carry water to other areas of the plant.",
+      "The condition of an isolated system is approximated by a sealed, vacuum-insulated reaction flask, where neither matter nor heat can be exchanged between the system and surroundings.",
+      "The concentration of the hydrogen ion in a solution can be determined by knowing the pH.",
+      "Genes are present within the chromosomes of a cell.",
+      "Choosing specific organisms to mate with each other in order to transfer particular, favorable characteristics to their descendants is the process of selective breeding.",
+      "If a center of low pressure is moving your way, you can anticipate stormy weather."
+    ],
+    "gt": [
+      [
+        "Bacteria can cause many health issues.  Lyme Disease is one example of that."
+      ],
+      [
+        "A corolla is a term to address all of the petals together."
+      ],
+      [
+        "All individuals with more chromosome sets than usual are called polypoids."
+      ],
+      [
+        "Also known as by the name of the backbone is the vertebral column."
+      ],
+      [
+        "Evaporation is the process by which liquid water can turn into liquid vapor."
+      ],
+      [
+        "A nice is the particular way a species makes a living."
+      ],
+      [
+        "A Reptiles internal temperature depends on the temperature of their environment, which is the meaning of ectothermic."
+      ],
+      [
+        "Most of the matter that makes up most of the universe is plasma."
+      ],
+      [
+        "A community consists of all organisms and their populations in a given area."
+      ],
+      [
+        "A more acidic ocean as a result of excess carbon dioxide in the atmosphere is known as ocean acidification."
+      ],
+      [
+        "A concave leans comparatively thin in the middle but outer corners are thicker."
+      ],
+      [
+        "An artificial kidney machine is used when patients require hemodialysis; or rather, the process wherein the patient's blood is passed through a length of tubing through the artificial kindney machine."
+      ],
+      [
+        "7 ph indicates that it is a base."
+      ],
+      [
+        "A front is the boundary between two air masses in weather terms."
+      ],
+      [
+        "All organic molecules contain carbon."
+      ],
+      [
+        "Four phases make up mitosis."
+      ],
+      [
+        "Either directly or indirectly, most of the energy from sun is used by living things."
+      ],
+      [
+        "A structure in the eye that allows light to enter is called the pupil."
+      ],
+      [
+        "A calcium ion is a prime example of a second messenger."
+      ],
+      [
+        "Cardiac output is determined by multiplying heart contractions by stroke volume per minute."
+      ],
+      [
+        "A membrane every type of cell there is."
+      ],
+      [
+        "A strong smelling liquid is sprayed by skunks to defend themselves."
+      ],
+      [
+        "Sandy soils allow water to drain quickly is the statement that best describes sandy soils."
+      ],
+      [
+        "Gamma rays are produced by radioactive atoms, nuclear explosions, and stars."
+      ],
+      [
+        "Bird embryo development is dependent on proper incubation. Incubation is when birds keep their eggs warm while the embryos develop inside."
+      ],
+      [
+        "A species changing in small ways over time is called microevolution."
+      ],
+      [
+        "A bike pedal creates mechanical movement."
+      ],
+      [
+        "A mineral is a crystal structure that is a solid."
+      ],
+      [
+        "Examples of objects that shine as a result of reflected light include setmoons, planets, and comets."
+      ],
+      [
+        "Alternation of generation complicates the life cycle of plants."
+      ],
+      [
+        "A change of season or less food causes some animals to migrate."
+      ],
+      [
+        "Nucleus is found in the head part of the sperm."
+      ],
+      [
+        "A baby who is under one year after birth is called an infant."
+      ],
+      [
+        "Air flow in lungs is regulated by smooth muscle."
+      ],
+      [
+        "200 meters is as deep as the photic zone extends."
+      ],
+      [
+        "Animals and plants both know there is a parasite called nematodes."
+      ],
+      [
+        "Creating goosebumps happens in mammals when the hair is raised using the tiny muscles in the skin."
+      ],
+      [
+        "Being up north during the winter means no food, so birds have to fly south to find that."
+      ],
+      [
+        "A 'day' is the amount of time the Earth rotates on its axis, which is once."
+      ],
+      [
+        "A deer eating a leaf involves and consumer and producer."
+      ],
+      [
+        "Most people know we have a think layer of rock on the earths surface but not many know it is called the lithosphere."
+      ],
+      [
+        "A human cell nucleus typically has 46 chromosomes which, laid out end to end, would measure out to about two meters."
+      ],
+      [
+        "Coal can't be renewed as an energy source, but the sun can."
+      ],
+      [
+        "Bones, cartilage, and ligaments are part of the skeletal system in the human body."
+      ],
+      [
+        "A form of cell division in prokaryotic organisms that produces identical offspring is known as binary fission."
+      ],
+      [
+        "Animals depends on plants for food and shelter."
+      ],
+      [
+        "A storm may make a tree without deep roots blow over."
+      ],
+      [
+        "Always closer to the sun than it is the earth, the planet Mercury is closer to the sun."
+      ],
+      [
+        "A good health habit is regular exercise."
+      ],
+      [
+        "Animal behavior is controlled by both genetics and experience, otherwise referred to as nature and nurture."
+      ],
+      [
+        "A large star most people are familiar with is the sun."
+      ],
+      [
+        "Fast moving rivers of air going in opposite directions are called jet streams."
+      ],
+      [
+        "Gametogenesis, within which are many processes including meiosis, produces sperm and eggs."
+      ],
+      [
+        "Carpal, Metacarpal and phalanx bones are the bones that are comprised in hand."
+      ],
+      [
+        "Blue eyes are a characteristic that human offspring can inherit."
+      ],
+      [
+        "Acceleration, force, and mass is more than a definition. It is Newton's second law of motion."
+      ],
+      [
+        "A person's gallbladder is located by the right lobe of the liver."
+      ],
+      [
+        "A molecule of water is formed when two hydrogen atoms combine with an oxygen atom."
+      ],
+      [
+        "Allowing an object to bend is the object's flexibility."
+      ],
+      [
+        "A beneficial relationship forms when fungus is present and a certain tree's roots need it in order to grow normally."
+      ],
+      [
+        "By bonding with itself in many different ways, carbon forms chains and this means it is essential for living organisms."
+      ],
+      [
+        "Egg, larva, pupa, and adult make up the life cycle of some insects."
+      ],
+      [
+        "A surface is cooled because of the evapotartive loss of the most energgetic waer molecules."
+      ],
+      [
+        "Human body function is regulated by hormones that are primarily produced by the endocrine system."
+      ],
+      [
+        "A pedigree is used to analyze mendelian inheritance."
+      ],
+      [
+        "Rain is a form of liquid water."
+      ],
+      [
+        "For the earth to go all of the way around the sun, it takes one year."
+      ],
+      [
+        "Medium determines the speed of sound,."
+      ],
+      [
+        "All chemical reactions must include a reactant and a product."
+      ],
+      [
+        "A narrow wire will have more resistance than a wide wire, in relation to electrical current."
+      ],
+      [
+        "An organism's metabolism is determined by the breakdown of all chemical reactions operating within the body."
+      ],
+      [
+        "Gases transport via the cardiovascular system."
+      ],
+      [
+        "A body system named the immune system recognizes, attacks ,and destroys foreign cells or substances tht may cause disease."
+      ],
+      [
+        "Both gravity and magnetism are both common forces."
+      ],
+      [
+        "A mirror is convex when it is shaped like the outside of a bowl."
+      ],
+      [
+        "The brain has many lobes, but the frontal lobe is the one with the primary motor cortex."
+      ],
+      [
+        "All cells can be characterized by their dependence on energy."
+      ],
+      [
+        "Gravity causes the planets to orbit around the Sun."
+      ],
+      [
+        "A cycle performed primarily by decomposers returns carbon and other matter to the ecosystem."
+      ],
+      [
+        "A decrease on the force of attraction between two magnets can be caused by increasing the distance between the magnets."
+      ],
+      [
+        "A ship can only float when the buoyant force is greater than the force of gravity acting on that ship."
+      ],
+      [
+        "An example of the solid form of water are ice cubes."
+      ],
+      [
+        "Birds live and breath on all of the continents."
+      ],
+      [
+        "A simple way to conserve more water is to turn of the water while we brush our teeth."
+      ],
+      [
+        "A microscope is able to show plant call parts."
+      ],
+      [
+        "After being swallowed, food travels through the esophagus, stomach, small intestine, and large intestine."
+      ],
+      [
+        "Decomposing dead organisms are used by mushrooms as a source of energy."
+      ],
+      [
+        "Burning paper produces heat."
+      ],
+      [
+        "Both plants and human experience the life processes of growth and reproduction."
+      ],
+      [
+        "A great way to conserve water is to water plants and grass in the early mornings because smaller amounts of water evaporate during the cooler morning period."
+      ],
+      [
+        "In the human body, the esophagus, the stomach, and the intestines are the structures that make up the digestive system."
+      ],
+      [
+        "Dormant seeds are seeds that are inactive until they have the right light, water, and soil conditions."
+      ],
+      [
+        "A complete revolution of the sun is made every year."
+      ],
+      [
+        "Birds' ancestors, which lived in trees, developed the wings that are a feature commonly associated with birds."
+      ],
+      [
+        "An example of a structure that is composed of one or more types of tissues is an organ."
+      ],
+      [
+        "Hydrogen is the element that is most abundant in the universe."
+      ],
+      [
+        "A mutated allele notifies of a person affected by an autosomal dominant disorder."
+      ],
+      [
+        "A descriptive term given  for those minerals and vitamins that are not needed by the body for providing energy but are still essential for good health is micronutrients."
+      ],
+      [
+        "A bee dance tells other bees in the hive where to find food."
+      ],
+      [
+        "Earth is very close to the sun and it is the closest star."
+      ],
+      [
+        "A tool called a viral vector is commonly used by molecular biologists' to place genetic material into cells."
+      ],
+      [
+        "During the electrical transmission superconductors looses no energy, and hence those materials are able to conduct electricity with 100% efficiency."
+      ],
+      [
+        "Earth receives most of it's heat energy from the sun through a process of radiation."
+      ],
+      [
+        "A metallic bond is created by the force of attraction between a positively charged metal ion and the valence electrons it shares with other ions of the metal."
+      ],
+      [
+        "By producing hormones, the endocrine system regulates growth, development, and reproduction."
+      ],
+      [
+        "DNA is the material that genes are composed of."
+      ],
+      [
+        "An embryo's development can place invertebrates (and higher animals) in one of two groups."
+      ],
+      [
+        "During the summer near the north pole the number of daylight hours each day is greatest."
+      ],
+      [
+        "Categories of the periodic table of elements include categories like metals and nonmetals."
+      ],
+      [
+        "A Plant cell contains a cell wall while an animal cell does not."
+      ],
+      [
+        "Earth has a lower average surface temperature than Venus."
+      ],
+      [
+        "A backbone signifies vertebrata might be present."
+      ],
+      [
+        "A disease that is preventable through diet in one type, but not preventable in another type is diabetes."
+      ],
+      [
+        "A basic nuclear fission process takes place when neutron particles collided with atoms of u-235."
+      ],
+      [
+        "In si, the unit for weight is Newton."
+      ],
+      [
+        "Five atoms make up hydrocarbons: one carbon atom and four hydrogen atoms."
+      ],
+      [
+        "A nonvascular plant is called a moss."
+      ],
+      [
+        "Metals are refined from the base material they start as, called ore."
+      ],
+      [
+        "A parent can pass brown eyes to a child."
+      ],
+      [
+        "Abnormal cell division may be a cause of cancer."
+      ],
+      [
+        "In Dynamics, we study how forces affect objects in motion."
+      ],
+      [
+        "During the process of fluorescence, minerals and some substances begin to glow in characteristic visible wavelengths after exposed to ultraviolet."
+      ],
+      [
+        "A complex machine by its nature is composed of multiple simple machines."
+      ],
+      [
+        "Cycles repeat themselves when they end, and the water cycle is no different."
+      ],
+      [
+        "A parallel circuit is on that has electricity flowing along one pathway."
+      ],
+      [
+        "In our solar system the sun is that the center."
+      ],
+      [
+        "Between the neuron and the next cell is a space called the synapse."
+      ],
+      [
+        "Horizontal layers are formed by sediments out of water."
+      ],
+      [
+        "A radioactive process like fission is what is used in nuclear power plants and a certain type of nuclear weapon."
+      ],
+      [
+        "A prism can be useful in displaying the makeup of white light?."
+      ],
+      [
+        "A response that plants have in the fall to the growing shorter days is going dormant."
+      ],
+      [
+        "Carbon compounds are the basis of all known life."
+      ],
+      [
+        "A simple harmonic oscillator is an uncomplicated type of device that consists of an object attached to a spring sliding on a frictionless surface."
+      ],
+      [
+        "Genetic inheritance can be traced by the pedigree chart."
+      ],
+      [
+        "An example of three different forms of energy you can find is heat, light, and sound."
+      ],
+      [
+        "Climatic factors and types of primary producers are characteristics by which terrestrial biomes are classified."
+      ],
+      [
+        "All energy in a food chain can be traced back to sunlight."
+      ],
+      [
+        "A lack of predators would cause the nuber of rabbits to increase."
+      ],
+      [
+        "A negative feedback loop that includes the hypothalamus and pituitary gland is also responsible for controlling the thyroid gland."
+      ],
+      [
+        "A different substance is formed when burning wood."
+      ],
+      [
+        "Chemical digestion in the body mainly takes place in the small intestine."
+      ],
+      [
+        "Environmental changes are the main reason why plants and animals, that have lived on the earth, have gone extinct."
+      ],
+      [
+        "Chloroplasts cannot be found in animal cells, only plant cells. This is because it is where photosynthesis happens; a process animal cells do not undergo."
+      ],
+      [
+        "Experts have theorized how ideal gases act and have named it the kinetic molecular theory."
+      ],
+      [
+        "A favorable train is known as an adaptation."
+      ],
+      [
+        "An example of a renewable energy resource is biomass."
+      ],
+      [
+        "Cell-->tissue-->-->organ-->organs system is the sequence that identifies the levels of the organization of body structures in a human from simplest to most complex."
+      ],
+      [
+        "Angiosperms are a phylum of plants that are the most successful."
+      ],
+      [
+        "A human's endocrine system provides most of its hormones."
+      ],
+      [
+        "Oxygen gas is produced by plants."
+      ],
+      [
+        "Decreasing the temperature can change liquid water to a solid."
+      ],
+      [
+        "At the equator the most direct sunlight is received of any other place on Earth."
+      ],
+      [
+        "An artery that takes blood to the brain is the carotid."
+      ],
+      [
+        "A moose eating a plant is an example of one living thing depending on another for survival."
+      ],
+      [
+        "A characteristic that helps some animals defend themselves against predators is strong odor."
+      ],
+      [
+        "3 atoms are contained in water."
+      ],
+      [
+        "A solid is the only state of matter in which the shape and volume are definite."
+      ],
+      [
+        "If soil is not protected, then plants won't have the nutrients they need to grow."
+      ],
+      [
+        "Conduction is a form of heat transfer that takes place when it comes into contact with matter , the atoms and molecules move and they in turn collide with other atoms or molecules so the heat is transferred, making them move too."
+      ],
+      [
+        "At low temperatures gases and liquids become solids."
+      ],
+      [
+        "Another way to say \"cellular drinking\" is by saying pinocytosis."
+      ],
+      [
+        "A frog develops its lungs when it changes from a tadpole to an adult."
+      ],
+      [
+        "Air mass has a property throughout it.  That property is similar temperature and moisture."
+      ],
+      [
+        "A spring is water that flows from the ground where an aquifer meets the surface."
+      ],
+      [
+        "Neptune can be located in eighth place away from our sun."
+      ],
+      [
+        "A fetus will begin to develop a respiratory system at about 4 weeks."
+      ],
+      [
+        "A crucial part of the balancing of ecosystems is done by beneficial fungi."
+      ],
+      [
+        "Clouds result from low pressure systems."
+      ],
+      [
+        "A car's wheels turn by a mechanism called the turning driveshaft."
+      ],
+      [
+        "A kitten's fur has a soft texture."
+      ],
+      [
+        "By studying earthquake waves, scientists have been able to determine how earth's interior is structured."
+      ],
+      [
+        "A dark dense rock called Gabbro can be found in the oceanic crust."
+      ],
+      [
+        "If layers of sedimentary rock have not been disturbed, the Law of Superposition tells us that the lowest layers will contain older rocks than the higher layers."
+      ],
+      [
+        "A rock rolling downhill is caused by gravity."
+      ],
+      [
+        "A pair of processes common to all living things are, using nutrients and growing."
+      ],
+      [
+        "Calories are used to show the amount of energy in food."
+      ],
+      [
+        "Atmospheric composition has changed over the past 200 years primarily due to human activity."
+      ],
+      [
+        "Coal can be mined from earth to use as an energy source."
+      ],
+      [
+        "Earth's atmosphere is made up mostly of oxygen and nitrogen."
+      ],
+      [
+        "If we see the opposite-headed arrows then the reaction is said to be reversible reaction."
+      ],
+      [
+        "Covering electrical wires in rubber or plastic is a way to insulate the wires."
+      ],
+      [
+        "Actin filaments, which are components of the cytoskeleton, are the muscle type of cell function relied on by microfilaments."
+      ],
+      [
+        "All of our oxygen is generated by photosynthetic organisms."
+      ],
+      [
+        "A metals to nonmetals comparison reveals that metals tend to have greater conductivity and higher melting points that nonmetals."
+      ],
+      [
+        "An example of matter is water."
+      ],
+      [
+        "During evaporation, liquid turns into vapor."
+      ],
+      [
+        "A chemical substance between atoms is where the energy is stored."
+      ],
+      [
+        "Plants use a system of tubes to send water to other parts."
+      ],
+      [
+        "A reaction flask that is sealed and vacuum insulated, preventing matter and heat exchange between system and surroundings, is what is considered an isolated system."
+      ],
+      [
+        "If the ph is known then the concentration of the hyrdorgen ion in a solution can be calculated."
+      ],
+      [
+        "Genes are contained within the chromosomes of a cell."
+      ],
+      [
+        "By choosing certain organisms to reproduce with one another, you are using selective breeding to pass on specific, desirable traits to the organism's offspring."
+      ],
+      [
+        "A storm might be expected if a center of low pressure is moving toward you."
       ]
     ]
   }

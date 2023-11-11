@@ -8,35 +8,39 @@
 - In terms of negative examples, Bart seems to be unaffected due to its extremely limited ICL capability. GPT-3.5 performed slightly worse with negative examples.
 
 ## Rouge-L Scores
-### GPT-3.5, 2 Positive Examples, 0 Negative Examples - missing the last 1000 samples, needs fix.
+### GPT-3.5, 2 Positive Examples, 0 Negative Examples
 ```
 subtask003_mctaco_question_generation_event_duration
-Rouge-L: 0.5052912331319627
+Rouge-L: 0.5048800870951279
 subtask022_cosmosqa_passage_inappropriate_binary
 Rouge-L: 0.902
 subtask033_winogrande_answer_generation
-Rouge-L: 0.6163010156510128
+Rouge-L: 0.6164151686548717
 subtask039_qasc_find_overlapping_words
-Rouge-L: 0.5148075821389569
+Rouge-L: 0.515208931239699
 subtask040_qasc_question_generation
-Rouge-L: 0.5699477473860566
+Rouge-L: 0.5695746894034718
 subtask044_essential_terms_identifying_essential_words
-Rouge-L: 0.6096463688199856
+Rouge-L: 0.607152800218064
+subtask045_miscellaneous_sentence_paraphrasing
+Rouge-L: 0.42342633419049136
 ```
-### GPT-3.5, 2 Positive Examples, 2 Negative Examples - missing the last 1000 samples, needs fix.
+### GPT-3.5, 2 Positive Examples, 2 Negative Examples
 ```
 subtask003_mctaco_question_generation_event_duration
-Rouge-L: 0.5035106042201024
+Rouge-L: 0.5047654021921226
 subtask022_cosmosqa_passage_inappropriate_binary
 Rouge-L: 0.86
 subtask033_winogrande_answer_generation
-Rouge-L: 0.6107600055248259
+Rouge-L: 0.610898864537891
 subtask039_qasc_find_overlapping_words
-Rouge-L: 0.512524370074368
+Rouge-L: 0.5128879176379156
 subtask040_qasc_question_generation
-Rouge-L: 0.5757572584030481
+Rouge-L: 0.5756901154458856
 subtask044_essential_terms_identifying_essential_words
-Rouge-L: 0.5548068802524304
+Rouge-L: 0.5528774577960986
+subtask045_miscellaneous_sentence_paraphrasing
+Rouge-L: 0.39431892209242636
 ```
 ### Bart, Full Prompt, No Few-Shot Examples
 ```
