@@ -24,7 +24,6 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.607152800218064
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.42342633419049136
-Average Rouge-L: 0.5913121781955984
 ```
 ### GPT-3.5, 2 Positive Examples, 2 Negative Examples
 ```
@@ -42,7 +41,6 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.5528774577960986
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.39431892209242636
-Average Rouge-L: 0.5733665460582248
 ```
 ### Bart, Full Prompt, No Few-Shot Examples
 ```
@@ -60,7 +58,6 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.18833830308348642
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.13210276078362063
-Average Rouge-L: 0.21333676702724164
 ```
 ### Bart, Full Prompt, 2 Positive Examples, 0 Negative Examples
 ```
@@ -78,7 +75,6 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.14993429145529807
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.1571020958878323
-Average Rouge-L: 0.21792591444568934
 ```
 ### Bart, Full Prompt, 2 Positive Examples, 2 Negative Examples
 ```
@@ -96,7 +92,6 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.0524577584903993
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.15396892442917315
-Average Rouge-L: 0.3162903501333311
 ```
 ### Bart, Full Prompt, 4 Positive Examples, 0 Negative Examples
 ```
@@ -114,5 +109,62 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.07198313814494037
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.15605236929322513
+<<<<<<< HEAD:results/findings.md
 Average Rouge-L: 0.2067434576670998
+=======
+```
+### Bart, Full Prompt, On All Tasks, 0 Positive Examples, 0 Negative Examples
+```
+subtask002_quoref_answer_generation
+Rouge-L: 0.38097793126414076
+subtask003_mctaco_question_generation_event_duration
+Rouge-L: 0.27723297276966063
+subtask005_mctaco_wrong_answer_generation_event_duration
+Rouge-L: 0.04903548002385212
+subtask008_mctaco_wrong_answer_generation_transient_stationary
+Rouge-L: 0.23102719565787744
+subtask022_cosmosqa_passage_inappropriate_binary
+Rouge-L: 0.064
+subtask033_winogrande_answer_generation
+Rouge-L: 0.19712258087876877
+subtask034_winogrande_question_modification_object
+Rouge-L: 0.5196302905818251
+subtask039_qasc_find_overlapping_words
+Rouge-L: 0.0770045415768108
+subtask040_qasc_question_generation
+Rouge-L: 0.356492981665816
+subtask044_essential_terms_identifying_essential_words
+Rouge-L: 0.043693778399310185
+subtask045_miscellaneous_sentence_paraphrasing
+Rouge-L: 0.13441370171322511
+subtask052_multirc_identify_bad_question
+Rouge-L: 0.08974358974358974
+```
+### Bart, Full Prompt, On All Tasks, As Many Positive Examples As Possible, 0 Negative Examples
+```
+subtask002_quoref_answer_generation
+Rouge-L: 0.25765152696437915
+subtask003_mctaco_question_generation_event_duration
+Rouge-L: 0.4477394884964331
+subtask005_mctaco_wrong_answer_generation_event_duration
+Rouge-L: 0.061683206973904635
+subtask008_mctaco_wrong_answer_generation_transient_stationary
+Rouge-L: 0.1852979879968516
+subtask022_cosmosqa_passage_inappropriate_binary
+Rouge-L: 0.064
+subtask033_winogrande_answer_generation
+Rouge-L: 0.24563067653938014
+subtask034_winogrande_question_modification_object
+Rouge-L: 0.45937026644894763
+subtask039_qasc_find_overlapping_words
+Rouge-L: 0.1422994823552512
+subtask040_qasc_question_generation
+Rouge-L: 0.47272604226395154
+subtask044_essential_terms_identifying_essential_words
+Rouge-L: 0.00846556010765126
+subtask045_miscellaneous_sentence_paraphrasing
+Rouge-L: 0.07481759882562085
+subtask052_multirc_identify_bad_question
+Rouge-L: 0.2532051282051282
+>>>>>>> c468341774494e90121f433e30d972298e0a2bf8:findings.md
 ```
