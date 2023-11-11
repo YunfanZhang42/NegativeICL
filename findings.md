@@ -24,6 +24,7 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.607152800218064
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.42342633419049136
+Average Rouge-L: 0.5913121781955984
 ```
 ### GPT-3.5, 2 Positive Examples, 2 Negative Examples
 ```
@@ -41,6 +42,7 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.5528774577960986
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.39431892209242636
+Average Rouge-L: 0.5733665460582248
 ```
 ### Bart, Full Prompt, No Few-Shot Examples
 ```
@@ -58,6 +60,7 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.18833830308348642
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.13210276078362063
+Average Rouge-L: 0.21333676702724164
 ```
 ### Bart, Full Prompt, 2 Positive Examples, 0 Negative Examples
 ```
@@ -75,6 +78,7 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.14993429145529807
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.1571020958878323
+Average Rouge-L: 0.21792591444568934
 ```
 ### Bart, Full Prompt, 2 Positive Examples, 2 Negative Examples
 ```
@@ -92,6 +96,7 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.0524577584903993
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.15396892442917315
+Average Rouge-L: 0.3162903501333311
 ```
 ### Bart, Full Prompt, 4 Positive Examples, 0 Negative Examples
 ```
@@ -109,4 +114,5 @@ subtask044_essential_terms_identifying_essential_words
 Rouge-L: 0.07198313814494037
 subtask045_miscellaneous_sentence_paraphrasing
 Rouge-L: 0.15605236929322513
+Average Rouge-L: 0.2067434576670998
 ```
