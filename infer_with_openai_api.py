@@ -11,7 +11,7 @@ from transformers import BartTokenizerFast, T5TokenizerFast, AutoTokenizer
 from data import NaturalInstructionsV1Seq2SeqDataset
 
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 
 openai_model = "gpt-3.5-turbo-1106"
 max_tokens = 128

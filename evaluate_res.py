@@ -2,7 +2,7 @@ import argparse
 import json
 from evaluate import load
 
-
+"""
 RES = [ 
         "bart-large-all-tasks-no-few-shot.json",
         "bart-large-all-tasks-pos-max.json",
@@ -12,8 +12,14 @@ RES = [
         "bart-large-pos-2.json",
         "bart-large-pos-4.json",
         "bart-large-pos-2-neg-2.json",
+        "bart-large-neg-2.json",
     ]
+"""
 
+RES = [
+    "bart-large-neg-2.json",
+    "gpt-3.5-neg-2.json",
+    ]
 
 # calculate ROUGE score
 def calculate_ROUGE(reference, candidate):

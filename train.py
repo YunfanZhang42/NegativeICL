@@ -2,6 +2,7 @@ import argparse
 import time
 import random
 import json
+import os
 
 import numpy as np
 import torch
@@ -108,6 +109,9 @@ if __name__ == "__main__":
 
     model = torch.compile(model, disable=not config.compile)
 
+    # if the load_model path doesn't exist, then we assume we're starting from scratch
+    if not os.path.exists(config.load_model):
+        torch.save(model.state_dict(), config.load_model)
     if config.load_model is not None:
         model.load_state_dict(torch.load(config.load_model, map_location=device))
     if config.activation_checkpointing:
