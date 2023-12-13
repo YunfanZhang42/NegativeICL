@@ -2,7 +2,9 @@ import argparse
 import time
 import random
 import os
+import json
 
+from dotmap import DotMap
 import numpy as np
 import torch
 import torch.optim as optim
@@ -14,51 +16,18 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaTokenizer, Ll
 from peft import PeftModel, LoraConfig, get_peft_model, TaskType
 from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
 
-from data import LLMSFTDataset
+from data import NaturalInstructionsV1Seq2SeqDataset
+
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Finetune LLMs with LoRA.")
-    parser.add_argument("--model-type", type=str, default="mistralai/Mistral-7B-v0.1")
-    parser.add_argument("--model-name", type=str, default="mistral-7b-sft")
-    parser.add_argument("--load-lora", type=str, default="")
-    parser.add_argument("--saved-model-path", type=str, default="./experiments/saved_models/")
-
-    parser.add_argument("--train-dataset-path", type=str, default="./path/to/train_data.parquet")
-    parser.add_argument("--val-dataset-path", type=str, default="./path/to/val_data.parquet")
-    parser.add_argument("--prompt-template-path", type=str, default="./path/to/llm_sft_few_shot_prompt.txt")
-    parser.add_argument("--max-length", type=int, default=768)
-
-    parser.add_argument("--lora-rank", type=int, default=64)
-    parser.add_argument("--lora-alpha", type=int, default=64)
-    parser.add_argument("--lora-dropout", type=float, default=0.05)
-    parser.add_argument("--lora-modules", type=str, default="q_proj,v_proj,k_proj,o_proj")
-    parser.add_argument("--lora-bias", type=str, default="lora_only")
-
-    parser.add_argument("--batch-size", type=int, default=32)
-    parser.add_argument("--gradient-accumulation-steps", type=int, default=32)
-    parser.add_argument("--eval-batch-size", type=int, default=4)
-    parser.add_argument("--num-epochs", type=int, default=1)
-    parser.add_argument("--eval-very-n-steps", type=int, default=937)
-
-    parser.add_argument("--max-lr", type=float, default=1e-4)
-    parser.add_argument("--min-lr", type=float, default=1e-5)
-    parser.add_argument("--cycle-steps", type=int, default=4688)
-    parser.add_argument("--warmup-steps", type=int, default=50)
-    parser.add_argument("--lr-gamma", type=float, default=0.8)
-    parser.add_argument("--weight-decay", type=float, default=0.01)
-
-    parser.add_argument("--random-seed", type=int, default=34622343)
-
-    parser.add_argument("--dtype", type=str, default="bfloat16", choices=["float16", "bfloat16", "float32"])
-    parser.add_argument("--device", type=str, default="cuda")
-    parser.add_argument("--compile", action="store_true")
-    parser.add_argument("--activation-checkpointing", action="store_true")
-    parser.add_argument("--flash-attn", action="store_true", help="Use Flash Attention 2.")
-
-    parser.add_argument("--tensorboard-log-dir", type=str, default="./experiments/")
-
+    parser = argparse.ArgumentParser(description="Finetune models on natural instructions dataset.")
+    parser.add_argument("--config", type=str, default="./config_llm_pos_4.json", help="Path to config file")
     args = parser.parse_args()
+
+    # Load the config
+    with open(args.config, "r") as f:
+        args = DotMap(json.load(f))
 
     # Set up the environment
     log_writer = SummaryWriter(os.path.join(args.tensorboard_log_dir, args.model_name))
@@ -80,8 +49,37 @@ if __name__ == "__main__":
     print(f"Finished initializing tokenizer")
 
     # Initialize the datasets
-    train_dataset = LLMSFTDataset(args.train_dataset_path, args.prompt_template_path, tokenizer, args.max_length)
-    val_dataset = LLMSFTDataset(args.val_dataset_path, args.prompt_template_path, tokenizer, args.max_length)
+    train_dataset = NaturalInstructionsV1Seq2SeqDataset(
+        subtask_dir=args.subtask_dir,
+        tasks=args.train_tasks,
+        template=args.template,
+        pos_template=args.pos_template,
+        neg_template=args.neg_template,
+        tokenizer=tokenizer,
+        max_input_length=args.max_input_length,
+        max_output_length=args.max_output_length,
+        positive_examples=args.positive_examples,
+        negative_examples=args.negative_examples,
+        additional_instructions=args.additional_instructions,
+        lm_type="decoder_only",
+        max_context_length=args.max_context_length,
+    )
+
+    val_dataset = NaturalInstructionsV1Seq2SeqDataset(
+        subtask_dir=args.subtask_dir,
+        tasks=args.val_tasks,
+        template=args.template,
+        pos_template=args.pos_template,
+        neg_template=args.neg_template,
+        tokenizer=tokenizer,
+        max_input_length=args.max_input_length,
+        max_output_length=args.max_output_length,
+        positive_examples=args.positive_examples,
+        negative_examples=args.negative_examples,
+        additional_instructions=args.additional_instructions,
+        lm_type="decoder_only",
+        max_context_length=args.max_context_length,
+    )
 
     # Initialize the dataloaders
     train_dataloader = DataLoader(

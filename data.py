@@ -3,10 +3,12 @@ import time
 import json
 import os
 import random
+
+import numpy as np
 from collections import Counter
 from dotmap import DotMap
 from torch.utils.data import Dataset
-from transformers import T5TokenizerFast, BartTokenizerFast
+from transformers import T5TokenizerFast, BartTokenizerFast, AutoTokenizer, LlamaTokenizer
 
 
 HF_LOSS_IGNORE_TOKEN_ID = -100
@@ -27,7 +29,9 @@ class NaturalInstructionsV1Seq2SeqDataset(Dataset):
         additional_instructions=True,
         positive_examples=2,
         negative_examples=2,
-        mode="train"
+        mode="train",
+        lm_type="encoder_decoder",
+        max_context_length=2048,
     ):
         super().__init__()
 
@@ -46,6 +50,12 @@ class NaturalInstructionsV1Seq2SeqDataset(Dataset):
         self.positive_examples = positive_examples
         self.negative_examples = negative_examples
         self.mode = mode
+        self.lm_type = lm_type
+        self.max_context_length = max_context_length
+
+        if self.lm_type =="decoder_only":
+            self.tokenizer.padding_side = "left"
+            self.tokenizer.pad_token = self.tokenizer.eos_token
 
         # Dataset statistics:
         # Key: task name
@@ -226,51 +236,114 @@ class NaturalInstructionsV1Seq2SeqDataset(Dataset):
         return len(self.sample_inputs)
 
     def __getitem__(self, idx):
-        inputs = self.tokenizer(
-            self.sample_inputs[idx], padding=self.padding, max_length=self.max_input_length, truncation=True, return_tensors="pt"
-        )
-        outputs = self.tokenizer(
-            self.sample_outputs[idx], padding=self.padding, max_length=self.max_output_length, truncation=True, return_tensors="pt"
-        )
-        labels = outputs["input_ids"]
-        labels[labels == self.tokenizer.pad_token_id] = HF_LOSS_IGNORE_TOKEN_ID
+        if self.lm_type == "encoder_decoder":
+            inputs = self.tokenizer(
+                self.sample_inputs[idx], padding=self.padding, max_length=self.max_input_length, truncation=True, return_tensors="np"
+            )
+            outputs = self.tokenizer(
+                self.sample_outputs[idx], padding=self.padding, max_length=self.max_output_length, truncation=True, return_tensors="np"
+            )
+            labels = outputs["input_ids"]
+            labels[labels == self.tokenizer.pad_token_id] = HF_LOSS_IGNORE_TOKEN_ID
 
-        return {
-            "input_ids": inputs["input_ids"].flatten(),
-            "attention_mask": inputs["attention_mask"].flatten(),
-            # Hugging Face's Seq2Seq models needs a labels argument, and should be able to generate decoder attention mask automatically.
-            "labels": labels.flatten(),
-            "all_outputs": self.sample_all_outputs[idx] if self.mode != "train" else False,
-            "task_name": self.sample_task_names[idx],
-        }
+            return {
+                "input_ids": inputs["input_ids"].flatten(),
+                "attention_mask": inputs["attention_mask"].flatten(),
+                # Hugging Face's Seq2Seq models needs a labels argument, and should be able to generate decoder attention mask automatically.
+                "labels": labels.flatten(),
+                "all_outputs": self.sample_all_outputs[idx] if self.mode != "train" else False,
+                "task_name": self.sample_task_names[idx],
+            }
+        elif self.lm_type == "decoder_only":
+            text_encoded = self.tokenizer(
+                self.sample_inputs[idx],
+                truncation=True,
+                max_length=self.max_input_length,
+                padding=False,
+                return_tensors="np",
+                add_special_tokens=False,
+            )
+
+            text_target_encoded = self.tokenizer(
+                self.sample_outputs[idx],
+                truncation=True,
+                max_length=self.max_output_length,
+                padding=False,
+                return_tensors="np",
+                add_special_tokens=False,
+            )
+
+            # Add start token to the beginning of the text_encoded, with attention mask of 1
+            text_input_ids = np.insert(text_encoded["input_ids"], 0, self.tokenizer.bos_token_id)
+            text_attention_mask = np.insert(text_encoded["attention_mask"], 0, 1)
+
+            # Add end token to the end of the text_target_encoded, with attention mask of 1
+            text_target_input_ids = np.append(text_target_encoded["input_ids"], self.tokenizer.eos_token_id)
+            text_target_attention_mask = np.append(text_target_encoded["attention_mask"], 1)
+
+            # Combine the two encodings
+            input_ids = np.append(text_input_ids, text_target_input_ids)
+            attention_mask = np.append(text_attention_mask, text_target_attention_mask)
+
+            # Truncate the combined encoding to max_context_length by removing tokens from the left side
+            input_ids = input_ids[-self.max_context_length :]
+            attention_mask = attention_mask[-self.max_context_length :]
+
+            # Pad the combined encoding to max_length, on the left side, with padding token
+            input_ids = np.pad(input_ids, (self.max_context_length - len(input_ids), 0), constant_values=self.tokenizer.pad_token_id)
+            attention_mask = np.pad(attention_mask, (self.max_context_length - len(attention_mask), 0), constant_values=0)
+
+            # Now, mark the last len(text_target_input_ids) tokens as labels, and the rest as -100
+            labels = np.full(self.max_context_length, HF_LOSS_IGNORE_TOKEN_ID)
+            labels[-len(text_target_input_ids) :] = text_target_input_ids
+
+            return {
+                "input_ids": input_ids,
+                "attention_mask": attention_mask,
+                "labels": labels,
+                "input": self.sample_inputs[idx],
+                "target": self.sample_outputs[idx],
+            }
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Test loading natural instructions dataset.")
-    parser.add_argument("--config", type=str, default="./config.json", help="Path to config file")
+    parser.add_argument("--config", type=str, default="./config_llm_test.json", help="Path to config file")
     args = parser.parse_args()
 
     # Load the config
     with open(args.config, "r") as f:
-        config = parsed = DotMap(json.load(f))
+        args = DotMap(json.load(f))
 
-    tokenizer = BartTokenizerFast.from_pretrained("facebook/bart-base")
+    # Initialize the tokenizer
+    if "llama" in args.model_type:
+        tokenizer = LlamaTokenizer.from_pretrained(args.model_type)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(args.model_type)
     print(f"Finished initializing tokenizer")
 
+    # Initialize the datasets
     val_dataset = NaturalInstructionsV1Seq2SeqDataset(
-        subtask_dir=config.subtask_dir,
-        tasks=config.train_tasks,
-        template=config.template,
-        pos_template=config.pos_template,
-        neg_template=config.neg_template,
+        subtask_dir=args.subtask_dir,
+        tasks=args.val_tasks,
+        template=args.template,
+        pos_template=args.pos_template,
+        neg_template=args.neg_template,
         tokenizer=tokenizer,
-        max_input_length=config.max_input_length,
-        max_output_length=config.max_output_length,
+        max_input_length=args.max_input_length,
+        max_output_length=args.max_output_length,
+        positive_examples=args.positive_examples,
+        negative_examples=args.negative_examples,
+        additional_instructions=args.additional_instructions,
+        lm_type="decoder_only",
+        max_context_length=args.max_context_length,
     )
+
     print(f"Finished loading datasets")
 
-    for i, batch in enumerate(val_dataset[:100]):
+    for i in range(100):
         print("Sample Index:", i)
+        batch = val_dataset[i]
         input_str = tokenizer.decode(batch["input_ids"])
         output_ids = [token_id if token_id != HF_LOSS_IGNORE_TOKEN_ID else tokenizer.pad_token_id for token_id in batch["labels"]]
         print("Input:\n", tokenizer.decode(batch["input_ids"]))

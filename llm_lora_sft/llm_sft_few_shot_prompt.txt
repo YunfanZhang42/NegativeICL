@@ -1,4 +1,0 @@
-This should be the prompt template
-
-{input}
-{target}
