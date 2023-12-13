@@ -6,8 +6,10 @@ from evaluate import load
 RES = [
     "formal-2-informal_gpt-3.5_pos-0_neg-0",
     "formal-2-informal_gpt-3.5_pos-2_neg-0",
+    "formal-2-informal_gpt-3.5_pos-2_neg-2",
     "formal-2-informal_gpt-3.5_pos-0_neg-2",
-    ]
+    "formal-2-informal_gpt-3.5_pos-0_neg-4",
+]
 
 
 # calculate ROUGE score
@@ -60,18 +62,19 @@ if __name__ == "__main__":
         rouge2 = 0
         rougeL = 0
         chrf = 0
-        for i in range(3):
+        for i in range(4):
             # get predictions
             pred = results["pred"]
+            gt = results[f"gt_{i}"]
             # calculate BLEU score
-            bleu += calculate_BLEU(results["gt_{i}"], pred)["bleu"] * 100
+            bleu += calculate_BLEU(gt, pred)["bleu"] * 100
             # calculate ROUGE score
-            rouge_res = calculate_ROUGE(results["gt_{i}"], pred)
+            rouge_res = calculate_ROUGE(gt, pred)
             rouge1 += rouge_res["rouge1"] * 100
             rouge2 += rouge_res["rouge2"] * 100
             rougeL += rouge_res["rougeL"] * 100
             # calculate chrF score
-            chrf += calculate_chrF(results["gt_{i}"], pred)["score"]
+            chrf += calculate_chrF(gt, pred)["score"]
             
         # average scores across 4 references
         bleu /= 4

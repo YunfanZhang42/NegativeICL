@@ -50,22 +50,22 @@ INFORMAL_2_FORMAL = [
 ]
 
 
-def generate_prompt_quantity(system_prompt, pos_example_bank, neg_example_bank, pos_num, neg_num, data):
+def generate_prompt_quantity(system_prompt, pos_example_bank, neg_example_bank, pos_num, neg_num):
     # initialize the prompt
-    messages = system_prompt
+    messages = []
     
     # randomly select positive and negative examples
     for i in range(pos_num):
         bank_size = len(pos_example_bank)
         pos_ex = json.loads(pos_example_bank[random.randint(0, bank_size-1)])
-        messages += [
+        messages = system_prompt + [
             {
                 "role": "user",
                 "content": f"Positive Example {i+1}\nInput: {pos_ex['problem']}\n\n"
             },
             {
                 "role": "assistant",
-                "content": f"Output:{pos_ex['gt'][0]}\n\n"
+                "content": f"Output:{pos_ex['gts'][0]}\n\n"
             }
         ]
 
@@ -75,11 +75,11 @@ def generate_prompt_quantity(system_prompt, pos_example_bank, neg_example_bank, 
         messages += [
             {
                 "role": "user",
-                "content": f"Negative Example {i+1}:\nInput: {neg_ex['gt'][0]}\n\n"
+                "content": f"Negative Example {i+1}:\nInput: {neg_ex['gts'][0]}\n\n"
             },
             {
                 "role": "assistant",
-                "content": f"Output: {neg_ex['gt'][1]}\n\n"
+                "content": f"Output: {neg_ex['gts'][1]}\n\n"
             }
         ]
 
@@ -184,20 +184,22 @@ def main():
                     raise ValueError("Invalid task name!")
             else:
                 if args.task == "formal-2-informal":
-                    prompt = generate_prompt_quantity(FORMAL_2_INFORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num, args.data)
+                    prompt = generate_prompt_quantity(FORMAL_2_INFORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num)
                 elif args.task == "informal-2-formal":
-                    prompt = generate_prompt_quantity(INFORMAL_2_FORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num, args.data)
+                    prompt = generate_prompt_quantity(INFORMAL_2_FORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num)
                 else:
                     raise ValueError("Invalid task name!")
+            
+            print(prompt)
             
             # get input from test data
             test_task = json.loads(test_data[i])
             input_cotent = test_task["problem"]
             res["problem"].append(input_cotent)
-            res["gt_0"].append(test_task["gt"][0])
-            res["gt_1"].append(test_task["gt"][1])
-            res["gt_2"].append(test_task["gt"][2])
-            res["gt_3"].append(test_task["gt"][3])
+            res["gt_0"].append(test_task["gts"][0])
+            res["gt_1"].append(test_task["gts"][1])
+            res["gt_2"].append(test_task["gts"][2])
+            res["gt_3"].append(test_task["gts"][3])
             
             # set different input format for zero-shot and few-shot
             if args.pos_num == 0 and args.neg_num == 0:
@@ -210,10 +212,9 @@ def main():
             result = result.replace("Output:", "").replace("Informal:", "").replace("Formal:", "").strip()
             result = result.replace("\n", "")
             res["pred"].append(result)
+            # print(f"Output {i}: {result}")
 
-            # write results to file
-            print(f"Output {i}: {result}")
-
+        # write results json to file
         res_file.write(json.dumps(res, indent=4))
         res_file.flush()
 
