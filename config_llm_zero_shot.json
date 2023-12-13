@@ -1,6 +1,6 @@
 {
     "model_type": "mistralai/Mistral-7B-v0.1",
-    "model_name": "mistral-7b-sft-pos-2-neg-2",
+    "model_name": "mistral-7b-sft-zero-shot",
     "load_lora": "",
     "saved_model_path": "./checkpoints/",
 
@@ -56,8 +56,8 @@
     "neg_template": "./templates/natural_instructions_v1_negative_examples_template.txt",
     "openai_system_prompt": "./templates/openai_system_prompt.txt",
   
-    "positive_examples": 2,
-    "negative_examples": 2,
+    "positive_examples": 0,
+    "negative_examples": 0,
     "additional_instructions": true,
 
     "lora_rank": 64,

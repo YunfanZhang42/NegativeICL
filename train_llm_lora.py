@@ -29,7 +29,7 @@ if __name__ == "__main__":
         args = DotMap(json.load(f))
 
     # Set up the environment
-    log_writer = SummaryWriter(os.path.join(args.tensorboard_log_dir, args.model_name))
+    # log_writer = SummaryWriter(os.path.join(args.tensorboard_log_dir, args.model_name))
 
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
@@ -100,6 +100,8 @@ if __name__ == "__main__":
         torch_dtype = torch.bfloat16
     elif args.dtype == "float32":
         torch_dtype = torch.float32
+    else:
+        torch_dtype = torch.bfloat16
 
     if "llama" in args.model_type:
         model = LlamaForCausalLM.from_pretrained(
@@ -184,7 +186,7 @@ if __name__ == "__main__":
                 print(
                     f"Epoch {epoch}, Batch {batch_count}, Loss {batch_loss}, samples/sec {args.batch_size / (time.time() - last_batch_time)}"
                 )
-                log_writer.add_scalar("train_loss", batch_loss, batch_count)
+                # log_writer.add_scalar("train_loss", batch_loss, batch_count)
                 batch_loss = 0.0
                 last_batch_time = time.time()
 
@@ -207,7 +209,7 @@ if __name__ == "__main__":
                             eval_loss += float(outputs.loss.item())
 
                     eval_loss /= len(valid_dataloader)
-                    log_writer.add_scalar("eval_loss", eval_loss, batch_count)
+                    # log_writer.add_scalar("eval_loss", eval_loss, batch_count)
                     print(
                         f"Batch count {batch_count}, Eval loss {eval_loss}, "
                         + f"samples/sec {len(valid_dataloader) * args.eval_batch_size / (time.time() - eval_start_time)}"
