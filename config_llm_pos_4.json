@@ -71,7 +71,7 @@
     "max_context_length": 1536,
     "batch_size": 32,
     "eval_batch_size": 4,
-    "gradient_accumulation_steps": 8,
+    "gradient_accumulation_steps": 2,
     "weight_decay": 0.01,
     "max_lr": 0.00004,
     "min_lr": 0.00001,

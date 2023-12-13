@@ -14,7 +14,7 @@ from pprint import pprint
 from tqdm import tqdm
 
 # add your OpenAI API key here
-openai.api_key = ""
+openai.api_key = "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"
 
 
 # system prompt settings
@@ -135,7 +135,7 @@ def main():
     parser.add_argument("--task", type=str, default="formal-2-informal", help="task name")
     parser.add_argument("--data", type=str, default="Entertainment_Music", help="Path to config file")
     parser.add_argument("--pos_num", type=int, default=0, help="number of positive examples")
-    parser.add_argument("--neg_num", type=int, default=2, help="number of negative examples")
+    parser.add_argument("--neg_num", type=int, default=0, help="number of negative examples")
     args = parser.parse_args()
     
     # load example bank if needed

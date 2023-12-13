@@ -4,9 +4,12 @@ from evaluate import load
 
 
 RES = [
-    "formal-2-informal_gpt-3.5_pos-0_neg-0",
-    "formal-2-informal_gpt-3.5_pos-2_neg-0",
-    "formal-2-informal_gpt-3.5_pos-2_neg-2",
+    #"formal-2-informal_gpt-3.5_pos-0_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-2_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-4_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-2_neg-2",
+    "formal-2-informal_gpt-3.5_pos-6_neg-0",
+    "formal-2-informal_gpt-3.5_pos-2_neg-4",
     "formal-2-informal_gpt-3.5_pos-0_neg-2",
     "formal-2-informal_gpt-3.5_pos-0_neg-4",
 ]
