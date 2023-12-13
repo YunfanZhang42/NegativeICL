@@ -24,7 +24,7 @@ class NaturalInstructionsV1Seq2SeqDataset(Dataset):
         neg_template="./templates/natural_instructions_v1_negative_examples_template.txt",
         tokenizer=None,
         padding="max_length",
-        max_input_length=1024,
+        max_input_length=512,
         max_output_length=128,
         additional_instructions=True,
         positive_examples=2,
