@@ -1,0 +1,21 @@
+{
+    "task": "Family_Relationships_informal-2-formal",
+    "problem": [
+        "And so what if it is a rebound relationship for both of you?"
+    ],
+    "pred": [
+        "And what if it happens to be a rebound relationship for both of you?"
+    ],
+    "gt_0": [
+        "What if it is a rebound relationship for both of you?"
+    ],
+    "gt_1": [
+        "Is it a rebound relationship for both of you?"
+    ],
+    "gt_2": [
+        "So what if it is a rebound relationship for the two of you?"
+    ],
+    "gt_3": [
+        "What does it matter if it is a rebound relationship for you both?"
+    ]
+}

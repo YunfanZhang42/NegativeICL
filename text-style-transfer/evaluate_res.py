@@ -3,15 +3,36 @@ import json
 from evaluate import load
 
 
-RES = [
+FORMAL_2_INFORMAL = [
     #"formal-2-informal_gpt-3.5_pos-0_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-1_neg-0",
     #"formal-2-informal_gpt-3.5_pos-2_neg-0",
     #"formal-2-informal_gpt-3.5_pos-4_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-1_neg-3",
+    "formal-2-informal_gpt-3.5_pos-1_neg-3_reversed",
     #"formal-2-informal_gpt-3.5_pos-2_neg-2",
-    "formal-2-informal_gpt-3.5_pos-6_neg-0",
-    "formal-2-informal_gpt-3.5_pos-2_neg-4",
-    "formal-2-informal_gpt-3.5_pos-0_neg-2",
-    "formal-2-informal_gpt-3.5_pos-0_neg-4",
+    "formal-2-informal_gpt-3.5_pos-2_neg-2_reversed",
+    #"formal-2-informal_gpt-3.5_pos-3_neg-1",
+    "formal-2-informal_gpt-3.5_pos-3_neg-1_reversed",
+    #"formal-2-informal_gpt-3.5_pos-6_neg-0",
+    #"formal-2-informal_gpt-3.5_pos-2_neg-4",
+    "formal-2-informal_gpt-3.5_pos-0_neg-1",
+    #"formal-2-informal_gpt-3.5_pos-0_neg-2",
+    #"formal-2-informal_gpt-3.5_pos-0_neg-4",
+]
+INFORMAL_2_FORMAL = [
+    #"informal-2-formal_gpt-3.5_pos-0_neg-0",
+    #"informal-2-formal_gpt-3.5_pos-1_neg-0",
+    #"informal-2-formal_gpt-3.5_pos-2_neg-0",
+    #"informal-2-formal_gpt-3.5_pos-4_neg-0",
+    "informal-2-formal_gpt-3.5_pos-1_neg-3",
+    #"informal-2-formal_gpt-3.5_pos-2_neg-2",
+    "informal-2-formal_gpt-3.5_pos-3_neg-1",
+    #"informal-2-formal_gpt-3.5_pos-6_neg-0",
+    #"informal-2-formal_gpt-3.5_pos-2_neg-4",
+    "informal-2-formal_gpt-3.5_pos-0_neg-1",
+    "informal-2-formal_gpt-3.5_pos-0_neg-2",
+    "informal-2-formal_gpt-3.5_pos-0_neg-4",
 ]
 
 
@@ -46,12 +67,20 @@ def calculate_chrF(reference, candidate):
 
 
 if __name__ == "__main__":
+    # python evaluate_res.py --task informal-2-formal --data Family_Relationships
     parser = argparse.ArgumentParser(description="Evaluate GYAFC dataset.")
-    parser.add_argument("--results_path", type=str, default="./GYAFC_Corpus/Entertainment_Music/model_outputs/formal.nmt_baseline", help="Path to config file")
+    parser.add_argument("--task", type=str, default="formal-2-informal", help="task name")
     parser.add_argument("--data", type=str, default="Entertainment_Music", help="Path to config file")
     args = parser.parse_args()
 
-    for res in RES:
+    if args.task == "formal-2-informal":
+        res_all = FORMAL_2_INFORMAL
+    elif args.task == "informal-2-formal":
+        res_all = INFORMAL_2_FORMAL
+    else:
+        raise ValueError("Invalid task name!")
+    
+    for res in res_all:
         input(f"Press Enter to continue to {res}...")
         print("************************************************************")
         print(f"Results for {res}")

@@ -14,7 +14,7 @@ from pprint import pprint
 from tqdm import tqdm
 
 # add your OpenAI API key here
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 # system prompt settings
@@ -22,14 +22,14 @@ FORMAL_2_INFORMAL_ZERO_SHOT = [
     {   # Instructions
         "role": "system",
         "content": "Please convert a sentence in formal style to an informal style. "
-        + "Note that you shoul keep the meaning of the sentence unchanged.\n\n"
+        + "Note that you should keep the meaning of the sentence unchanged.\n\n"
     }
 ]
 FORMAL_2_INFORMAL = [
     {  # Instructions
         "role": "system",
         "content": "Please convert a sentence in formal style to an informal style. "
-        + "Note that you shoul keep the meaning of the sentence unchanged. "
+        + "Note that you should keep the meaning of the sentence unchanged. "
         + "Please follow the positive examples and avoid the negative examples shown below.\n\n",
     }
 ]
@@ -37,52 +37,69 @@ INFORMAL_2_FORMAL_ZERO_SHOT = [
     {   # Instructions
         "role": "system",
         "content": "Please convert a sentence in informal style to an formal style. "
-        + "Note that you shoul keep the meaning of the sentence unchanged.\n\n"
+        + "Note that you should keep the meaning of the sentence unchanged.\n\n"
     }
 ]
 INFORMAL_2_FORMAL = [
     {  # Instructions
         "role": "system",
         "content": "Please convert a sentence in informal style to an formal style. "
-        + "Note that you shoul keep the meaning of the sentence unchanged. "
+        + "Note that you should keep the meaning of the sentence unchanged. "
         + "Please follow the positive examples and avoid the negative examples shown below.\n\n",
     }
 ]
 
 
-def generate_prompt_quantity(system_prompt, pos_example_bank, neg_example_bank, pos_num, neg_num):
+def generate_prompt_quantity(system_prompt, pos_example_bank, neg_example_bank, pos_num, neg_num, reverse=False, shuffle=False):
     # initialize the prompt
     messages = []
     
-    # randomly select positive and negative examples
+    # randomly select positive examples
+    pos_prompt = []
     for i in range(pos_num):
         bank_size = len(pos_example_bank)
         pos_ex = json.loads(pos_example_bank[random.randint(0, bank_size-1)])
-        messages = system_prompt + [
-            {
-                "role": "user",
-                "content": f"Positive Example {i+1}\nInput: {pos_ex['problem']}\n\n"
-            },
-            {
-                "role": "assistant",
-                "content": f"Output:{pos_ex['gts'][0]}\n\n"
-            }
-        ]
+        pos_prompt.append(
+            [
+                {
+                    "role": "user",
+                    "content": f"Positive Example {i+1}\nInput: {pos_ex['problem']}\n\n"
+                },
+                {
+                    "role": "assistant",
+                    "content": f"Output:{pos_ex['gts'][0]}\n\n"
+                }
+            ]
+        )
 
+    # randomly select negative examples
+    neg_prompt = []
     for i in range(neg_num):
         bank_size = len(neg_example_bank)
         neg_ex = json.loads(neg_example_bank[random.randint(0, bank_size-1)])
-        messages += [
-            {
-                "role": "user",
-                "content": f"Negative Example {i+1}:\nInput: {neg_ex['gts'][0]}\n\n"
-            },
-            {
-                "role": "assistant",
-                "content": f"Output: {neg_ex['gts'][1]}\n\n"
-            }
-        ]
+        neg_prompt.append(
+            [
+                {
+                    "role": "user",
+                    "content": f"Negative Example {i+1}:\nInput: {neg_ex['gts'][0]}\n\n"
+                },
+                {
+                    "role": "assistant",
+                    "content": f"Output: {neg_ex['gts'][1]}\n\n"
+                }
+            ]
+        )
+    
+    if reverse:
+        messages = system_prompt + sum(neg_prompt, []) + sum(pos_prompt, [])
+    elif shuffle:
+        example_prompt = pos_prompt + neg_prompt
+        random.shuffle(example_prompt)
+        messages = system_prompt + sum(example_prompt, [])
+    else:
+        messages = system_prompt + sum(pos_prompt, []) + sum(neg_prompt, [])
 
+    # print(messages)
     return messages
 
 
@@ -128,14 +145,16 @@ def get_openai_chat(
                 seed,
             )
 
-        
+
 def main():
-    # parse arguments
+    # python gpt_inference.py --task informal-2-formal --data Family_Relationships --pos_num 2 --neg_num 2 --reverse
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", type=str, default="formal-2-informal", help="task name")
     parser.add_argument("--data", type=str, default="Entertainment_Music", help="Path to config file")
     parser.add_argument("--pos_num", type=int, default=0, help="number of positive examples")
     parser.add_argument("--neg_num", type=int, default=0, help="number of negative examples")
+    parser.add_argument("--reverse", action="store_true", help="reverse the order of positive and negative examples")
+    parser.add_argument("--shuffle", action="store_true", help="randomly shuffle the order of positive and negative examples")
     args = parser.parse_args()
     
     # load example bank if needed
@@ -160,7 +179,14 @@ def main():
         test_data = test_file.readlines()
     
     # write test data to file
-    with open(f"./GYAFC_Corpus/{args.data}/model_outputs/{args.task}_gpt-3.5_pos-{args.pos_num}_neg-{args.neg_num}.json", "w") as res_file:
+    if args.reverse:
+        outpout_path = f"./GYAFC_Corpus/{args.data}/model_outputs/{args.task}_gpt-3.5_pos-{args.pos_num}_neg-{args.neg_num}_reversed.json"
+    elif args.shuffle:
+        outpout_path = f"./GYAFC_Corpus/{args.data}/model_outputs/{args.task}_gpt-3.5_pos-{args.pos_num}_neg-{args.neg_num}_shuffle.json"
+    else:
+        outpout_path = f"./GYAFC_Corpus/{args.data}/model_outputs/{args.task}_gpt-3.5_pos-{args.pos_num}_neg-{args.neg_num}.json"
+    
+    with open(outpout_path, "w") as res_file:
         # initialize results json
         res = {
             "task": f"{args.data}_{args.task}",
@@ -184,9 +210,9 @@ def main():
                     raise ValueError("Invalid task name!")
             else:
                 if args.task == "formal-2-informal":
-                    prompt = generate_prompt_quantity(FORMAL_2_INFORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num)
+                    prompt = generate_prompt_quantity(FORMAL_2_INFORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num, args.reverse, args.shuffle)
                 elif args.task == "informal-2-formal":
-                    prompt = generate_prompt_quantity(INFORMAL_2_FORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num)
+                    prompt = generate_prompt_quantity(INFORMAL_2_FORMAL, pos_example_bank, neg_example_bank, args.pos_num, args.neg_num, args.reverse, args.shuffle)
                 else:
                     raise ValueError("Invalid task name!")
             
