@@ -19,10 +19,9 @@ from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
 from data import NaturalInstructionsV1Seq2SeqDataset
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Finetune models on natural instructions dataset.")
-    parser.add_argument("--config", type=str, default="./config_llm_pos_4.json", help="Path to config file")
+    parser.add_argument("--config", type=str, default="./config_llm_test.json", help="Path to config file")
     args = parser.parse_args()
 
     # Load the config
@@ -32,9 +31,9 @@ if __name__ == "__main__":
     # Set up the environment
     log_writer = SummaryWriter(os.path.join(args.tensorboard_log_dir, args.model_name))
 
-    torch.manual_seed(args.random_seed)
-    np.random.seed(args.random_seed)
-    random.seed(args.random_seed)
+    torch.manual_seed(args.seed)
+    np.random.seed(args.seed)
+    random.seed(args.seed)
     device = torch.device("cuda" if torch.cuda.is_available() and args.device == "cuda" else "cpu")
     torch.backends.cudnn.benchmark = True
     torch.backends.cuda.matmul.allow_tf32 = True
@@ -103,9 +102,13 @@ if __name__ == "__main__":
         torch_dtype = torch.float32
 
     if "llama" in args.model_type:
-        model = LlamaForCausalLM.from_pretrained(args.model_type, device_map=device, torch_dtype=torch_dtype, use_flash_attention_2=args.flash_attn)
+        model = LlamaForCausalLM.from_pretrained(
+            args.model_type, device_map=device, torch_dtype=torch_dtype, use_flash_attention_2=args.flash_attn
+        )
     elif "mistral" in args.model_type or "zephyr" in args.model_type:
-        model = MistralForCausalLM.from_pretrained(args.model_type, device_map=device, torch_dtype=torch_dtype, use_flash_attention_2=args.flash_attn)
+        model = MistralForCausalLM.from_pretrained(
+            args.model_type, device_map=device, torch_dtype=torch_dtype, use_flash_attention_2=args.flash_attn
+        )
     else:
         model = AutoModelForCausalLM.from_pretrained(args.model_type, torch_dtype=torch_dtype)
 
@@ -128,7 +131,7 @@ if __name__ == "__main__":
     else:
         lora_model = PeftModel.from_pretrained(model, args.load_lora, is_trainable=True)
         print(f"Finished loading Lora model from {args.load_lora}")
-    
+
     lora_model.print_trainable_parameters()
     model = torch.compile(lora_model, disable=not args.compile)
 
@@ -187,6 +190,10 @@ if __name__ == "__main__":
 
                 if batch_count > 0 and batch_count % args.eval_very_n_steps == 0:
                     model.eval()
+
+                    model.save_pretrained(os.path.join(args.saved_model_path, args.model_name + "_latest"))
+                    print(f"Saved latest model, batch {batch_count}")
+
                     eval_loss = 0
                     eval_start_time = time.time()
                     with torch.no_grad():
@@ -209,9 +216,7 @@ if __name__ == "__main__":
                     if eval_loss < best_eval_loss:
                         best_eval_loss = eval_loss
                         model.save_pretrained(os.path.join(args.saved_model_path, args.model_name + "_best"))
-
-                    model.save_pretrained(os.path.join(args.saved_model_path, args.model_name + "_latest"))
-                    print(f"Saved latest model with loss {eval_loss}, batch {batch_count}")
+                        print(f"Saved best model, batch {batch_count}")
 
                     model.train()
 

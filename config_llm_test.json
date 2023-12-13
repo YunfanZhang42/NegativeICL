@@ -2,6 +2,7 @@
     "model_type": "mistralai/Mistral-7B-v0.1",
     "model_name": "mistral-7b-sft",
     "load_lora": "",
+    "saved_model_path": "./checkpoints/",
 
     "subtask_dir": "./natural-instructions-1.0/data/",
     "train_tasks": [
@@ -32,21 +33,21 @@
     "max_context_length": 2048,
     "batch_size": 32,
     "eval_batch_size": 4,
-    "gradient_accumulation_steps": 16,
+    "gradient_accumulation_steps": 8,
     "weight_decay": 0.01,
-    "max_lr": 0.0001,
-    "min_lr": 0.00001,
+    "max_lr": 0.00005,
+    "min_lr": 0.000005,
     "cycle_steps": 5000,
     "warmup_steps": 500,
     "lr_gamma": 0.8,
   
-    "num_epochs": 3,
-    "eval_very_n_steps": 1500,
+    "num_epochs": 1,
+    "eval_very_n_steps": 5,
   
     "dtype": "bfloat16",
     "compile": false,
     "flash_attn": true,
-    "activation_checkpointing": false,
+    "activation_checkpointing": true,
   
     "seed": 456970,
     "device": "cuda",
