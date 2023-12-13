@@ -13,8 +13,11 @@ import openai
 from pprint import pprint
 from tqdm import tqdm
 
+# fix random seed for reproducibility
+random.seed(25)
+
 # add your OpenAI API key here
-openai.api_key = "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"
+openai.api_key = ""
 
 
 # system prompt settings

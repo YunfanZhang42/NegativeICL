@@ -4,30 +4,30 @@ from evaluate import load
 
 
 FORMAL_2_INFORMAL = [
-    #"formal-2-informal_gpt-3.5_pos-0_neg-0",
-    #"formal-2-informal_gpt-3.5_pos-1_neg-0",
-    #"formal-2-informal_gpt-3.5_pos-2_neg-0",
-    #"formal-2-informal_gpt-3.5_pos-4_neg-0",
-    #"formal-2-informal_gpt-3.5_pos-1_neg-3",
-    #"formal-2-informal_gpt-3.5_pos-1_neg-3_reversed",
-    #"formal-2-informal_gpt-3.5_pos-2_neg-2",
-    #"formal-2-informal_gpt-3.5_pos-2_neg-2_reversed",
-    #"formal-2-informal_gpt-3.5_pos-3_neg-1",
-    #"formal-2-informal_gpt-3.5_pos-3_neg-1_reversed",
-    #"formal-2-informal_gpt-3.5_pos-6_neg-0",
-    #"formal-2-informal_gpt-3.5_pos-2_neg-4",
+    "formal-2-informal_gpt-3.5_pos-0_neg-0",
+    "formal-2-informal_gpt-3.5_pos-1_neg-0",
+    "formal-2-informal_gpt-3.5_pos-2_neg-0",
+    "formal-2-informal_gpt-3.5_pos-4_neg-0",
+    "formal-2-informal_gpt-3.5_pos-3_neg-1",
+    "formal-2-informal_gpt-3.5_pos-3_neg-1_reversed",
+    "formal-2-informal_gpt-3.5_pos-2_neg-2",
+    "formal-2-informal_gpt-3.5_pos-2_neg-2_reversed",
+    "formal-2-informal_gpt-3.5_pos-1_neg-3",
+    "formal-2-informal_gpt-3.5_pos-1_neg-3_reversed",
+    "formal-2-informal_gpt-3.5_pos-6_neg-0",
+    "formal-2-informal_gpt-3.5_pos-2_neg-4",
     "formal-2-informal_gpt-3.5_pos-0_neg-1",
-    #"formal-2-informal_gpt-3.5_pos-0_neg-2",
-    #"formal-2-informal_gpt-3.5_pos-0_neg-4",
+    "formal-2-informal_gpt-3.5_pos-0_neg-2",
+    "formal-2-informal_gpt-3.5_pos-0_neg-4",
 ]
 INFORMAL_2_FORMAL = [
-    #"informal-2-formal_gpt-3.5_pos-0_neg-0",
-    #"informal-2-formal_gpt-3.5_pos-1_neg-0",
-    #"informal-2-formal_gpt-3.5_pos-2_neg-0",
-    #"informal-2-formal_gpt-3.5_pos-4_neg-0",
-    "informal-2-formal_gpt-3.5_pos-1_neg-3",
-    #"informal-2-formal_gpt-3.5_pos-2_neg-2",
+    "informal-2-formal_gpt-3.5_pos-0_neg-0",
+    "informal-2-formal_gpt-3.5_pos-1_neg-0",
+    "informal-2-formal_gpt-3.5_pos-2_neg-0",
+    "informal-2-formal_gpt-3.5_pos-4_neg-0",
     "informal-2-formal_gpt-3.5_pos-3_neg-1",
+    "informal-2-formal_gpt-3.5_pos-2_neg-2",
+    "informal-2-formal_gpt-3.5_pos-1_neg-3",
     "informal-2-formal_gpt-3.5_pos-0_neg-1",
     "informal-2-formal_gpt-3.5_pos-0_neg-2",
     "informal-2-formal_gpt-3.5_pos-0_neg-4",
@@ -87,31 +87,31 @@ if __name__ == "__main__":
             results = json.load(res_file)
         
         # initialize scores
-        bleu = 0
-        rouge1 = 0
-        rouge2 = 0
-        rougeL = 0
-        chrf = 0
+        bleu_all = []
+        rouge1_all = []
+        rouge2_all = []
+        rougeL_all = []
+        chrf_all = []
         for i in range(4):
             # get predictions
             pred = results["pred"]
             gt = results[f"gt_{i}"]
             # calculate BLEU score
-            bleu += calculate_BLEU(gt, pred)["bleu"] * 100
+            bleu_all.append(calculate_BLEU(gt, pred)["bleu"] * 100)
             # calculate ROUGE score
             rouge_res = calculate_ROUGE(gt, pred)
-            rouge1 += rouge_res["rouge1"] * 100
-            rouge2 += rouge_res["rouge2"] * 100
-            rougeL += rouge_res["rougeL"] * 100
+            rouge1_all.append(rouge_res["rouge1"] * 100)
+            rouge2_all.append(rouge_res["rouge2"] * 100)
+            rougeL_all.append(rouge_res["rougeL"] * 100)
             # calculate chrF score
-            chrf += calculate_chrF(gt, pred)["score"]
+            chrf_all.append(calculate_chrF(gt, pred)["score"])
             
-        # average scores across 4 references
-        bleu /= 4
-        rouge1 /= 4
-        rouge2 /= 4
-        rougeL /= 4
-        chrf /= 4
+        # take the max score acorss all 4 references
+        bleu = max(bleu_all)
+        rouge1 = max(rouge1_all)
+        rouge2 = max(rouge2_all)
+        rougeL = max(rougeL_all)
+        chrf = max(chrf_all)
         
         print("************************************************************")
         print(f"BLEU: {bleu}")
